@@ -20,13 +20,19 @@ class percolate {
 	boolean[][] grid;
 	WeightedQuickUnionUF obj;
 	int size;
-	percolate(int size) {
-		this.size = size;
+	percolate(int size1) {
+		size = size1;
 		grid = new boolean[size][size];
 		obj = new WeightedQuickUnionUF(size * size + 2);
 	}
-	public void open(int row, int column) {
-		if(grid[row][column]) {
+	/**
+	 * function_description.
+	 *
+	 * @param      row     The row
+	 * @param      column  The column
+	 */
+	public void open(final int row, final int column) {
+		if (grid[row][column]) {
 			return;
 		}
 		grid[row][column] = true;
@@ -44,7 +50,7 @@ class percolate {
 			obj.union(convert(row, column), convert(
 				row - 1, column));
 		}
-		if (column > 0 && grid[row][column-1]) { //left element
+		if (column > 0 && grid[row][column - 1]) { //left element
 			obj.union(convert(row, column), convert(
 				row, column - 1));
 		}
