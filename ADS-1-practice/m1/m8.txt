@@ -1,0 +1,4 @@
+Weighted Quick Union Path Compression is best.
+The idea of path compression is to make the found root as parent of x so that we don’t have to traverse all intermediate nodes again.
+The two techniques  weighted quick-union and weighted quick-union path compression complement each other.
+The time complexity of each operation becomes even smaller in path compression.
