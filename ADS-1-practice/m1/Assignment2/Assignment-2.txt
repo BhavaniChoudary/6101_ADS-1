@@ -1,0 +1,5 @@
+For the given problem, due to the repeated values in array we can not apply the weighted quick union path compression algorithm. Those are 
+7 3 8 3 4 5 6 8 8 1
+6 3 8 0 4 5 6 9 8 1
+0 0 0 0 0 0 0 0 0 0
+9 6 2 6 1 4 5 8 8 9
