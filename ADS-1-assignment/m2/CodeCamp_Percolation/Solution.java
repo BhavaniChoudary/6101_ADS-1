@@ -38,32 +38,39 @@ class percolate{
 			return;
 		}
 		grid[row][column] = true;
-		if(row == 0){
+		if (row == 0){
 			obj.union(convert(row,column), size*size);
 		}
-		if(row == size-1){
+		if (row == size-1){
 			obj.union(convert(row, column), size*size+1);
 		}
-		if(row < size - 1 && grid[row+1][column]){ //bottom element
+		if (row < size - 1 && grid[row+1][column]){ //bottom element
 			obj.union(convert(row,column), convert(row+1, column));
 		}
-		if(row > 0 && grid[row-1][column]){ //top element
+		if (row > 0 && grid[row-1][column]){ //top element
 			obj.union(convert(row,column), convert(row-1, column));
 		}
-		if(column > 0 && grid[row][column-1]){ //left element
+		if (column > 0 && grid[row][column-1]){ //left element
 			obj.union(convert(row,column), convert(row, column-1));
 		}
-		if(column < size - 1 && grid[row][column+1]){ //right element
-			obj.union(convert(row,column), convert(row, column+1));
+		if (column < size - 1 && grid[row][column + 1]) { //right element
+			obj.union(convert(row,column), convert(row, column + 1));
 		}
 
 
 	}
-	public boolean ispercolate(){
-		return obj.connected(size * size, size*size+1);
+	public boolean ispercolate() {
+		return obj.connected(size * size, size * size + 1);
 	}
-
-	public int convert(int i, int j){
+	/**
+	 * function_description.
+	 *
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int convert(final int i, final int j) {
 		return i * size + j;
 	}
 }
