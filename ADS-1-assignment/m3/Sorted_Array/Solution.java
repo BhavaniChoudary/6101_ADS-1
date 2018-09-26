@@ -12,7 +12,7 @@ final class Solution {
          */
     }
     /**
-     * Main function_description
+     * Main function_description.
      *
      * @param      args  The arguments
      */
