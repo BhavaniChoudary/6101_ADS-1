@@ -1,8 +1,19 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * item_description.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
     }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int size = s.nextInt();
@@ -18,7 +29,6 @@ final class Solution {
             j = i + 1;
             k = size - 1;
             while (j < k) {
-                // System.out.println("here");
                 if (numbers[i] + numbers[j] + numbers[k] == 0) {
                     count++;
                     j++;
@@ -33,3 +43,4 @@ final class Solution {
         System.out.println(count);
     }
 }
+
