@@ -1,8 +1,15 @@
 import java.util.Scanner;
-
+/**
+ * item_description.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-
+        /**
+         * Main function.
+         */
     }
     public static void main(final String[] args) {
     Scanner s = new Scanner(System.in);
