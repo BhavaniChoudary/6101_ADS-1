@@ -7,7 +7,7 @@ final class Solution {
         Scanner s = new Scanner(System.in);
         int size = s.nextInt();
         int[] numbers = new int[size];
-        for (int i = 0; i > size; i++) {
+        for (int i = 0; i < size; i++) {
             numbers[i] = s.nextInt();
         }
         Arrays.sort(numbers);
@@ -18,11 +18,12 @@ final class Solution {
             j = i + 1;
             k = size - 1;
             while (j < k) {
+                // System.out.println("here");
                 if (numbers[i] + numbers[j] + numbers[k] == 0) {
                     count++;
                     j++;
                     k--;
-                } else if (numbers[i] + numbers[j] + numbers[k] < 0) {
+                } else if (numbers[i] + numbers[j] + numbers[k] <    0) {
                     j++;
                 } else {
                     k--;
