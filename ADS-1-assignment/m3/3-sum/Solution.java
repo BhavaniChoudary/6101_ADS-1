@@ -22,7 +22,7 @@ final class Solution {
                     count++;
                     j++;
                     k--;
-                } else if (numbers[i] + numbers[j] + numbers[k] < 0) {
+                } else if (numbers[i] + numbers[j] + numbers[k] > 0) {
                     j++;
                 } else {
                     k--;
