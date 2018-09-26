@@ -8,9 +8,14 @@ final class Solution {
      */
     private Solution() {
         /**
-         * Main function.
+         * item_description.
          */
     }
+    /**
+     * Main function_description
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
     Scanner s = new Scanner(System.in);
     String s1 = s.nextLine();
@@ -47,13 +52,11 @@ final class Solution {
             j++;
         }
     }
-
     while (j < number2) {
         c[k] = b[j];
         k++;
         j++;
     }
-
     while (i < number1) {
         c[k] = a[i];
         k++;
@@ -65,3 +68,5 @@ final class Solution {
      System.out.print(c[c.length - 1]);
     }
 }
+
+
