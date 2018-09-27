@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * Stack class.
+ */
 class Stack {
     /**
      * var_description.
@@ -8,6 +11,11 @@ class Stack {
      * var_description.
      */
     private int top;
+    /**
+     * Constructs the object.
+     *
+     * @param      size  The size
+     */
     Stack(final int size) {
         data = new String[size];
         top = -1;
@@ -77,9 +85,17 @@ class Stack {
         }
         return 0;
     }
+    /**
+     * function_description.
+     */
     public void pop() {
         top--;
     }
+    /**
+     * Gets the top.
+     *
+     * @return     The top.
+     */
     public int getTop() {
         return top;
     }
@@ -102,7 +118,7 @@ final class Solution {
     private Solution() {
     }
     /**
-     * main function
+     * main function.
      *
      * @param      args  The arguments
      */
@@ -135,3 +151,4 @@ final class Solution {
         }
     }
 }
+
