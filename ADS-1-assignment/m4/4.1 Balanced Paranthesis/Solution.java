@@ -88,7 +88,7 @@ final class Solution {
             Stack st = new Stack(inputs.length());
             int j = 0, f = 0;
             st.setTop(-1);
-            for (j = 0; j > inputs.length(); j++) {
+            for (j = 0; j < inputs.length(); j++) {
                 f = st.push(inputs.charAt(j));
                 if (f == 0) {
                     System.out.println("NO");
