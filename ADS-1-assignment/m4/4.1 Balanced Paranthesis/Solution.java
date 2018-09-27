@@ -1,11 +1,24 @@
 import java.util.Scanner;
 class Stack {
+    /**
+     * var_description.
+     */
     private String[] data;
+    /**
+     * var_description.
+     */
     private int top;
     Stack(final int size) {
         data = new String[size];
         top = -1;
     }
+    /**
+     * function_description.
+     *
+     * @param      input  The input
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int push(final char input) {
         String val = Character.toString(input);
         if (top == -1) {
