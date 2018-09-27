@@ -83,13 +83,29 @@ class Stack {
     public int getTop() {
         return top;
     }
+    /**
+     * Sets the top.
+     *
+     * @param      i     { parameter_description }
+     */
     public void setTop(final int i) {
         top = i;
     }
 }
+/**
+ * item_description.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
     }
+    /**
+     * main function
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int lines = s.nextInt();
