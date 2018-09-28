@@ -13,7 +13,7 @@ final class Deque {
     }
     void pushLeft(int num) {
         int temp;
-        for (int i = size + 1; i < 0; i--) {
+        for (int i = size + 1; i > 0; i--) {
             temp = stackArr[i - 1];
             stackArr[i] = temp;
         }
