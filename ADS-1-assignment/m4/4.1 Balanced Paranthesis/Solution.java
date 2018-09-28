@@ -6,7 +6,13 @@ class Stack {
         data = new String[size];
         top = -1;
     }
-
+    /**
+     * { function_description }
+     *
+     * @param      input  The input
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int push(final char input) {
         String val = Character.toString(input);
         if (top == -1) {
