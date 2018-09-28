@@ -1,16 +1,25 @@
 import java.util.Scanner;
 import java.util.Arrays;
-
+/**
+ * item_description.
+ */
 final class Deque {
     private int size;
     private int[] stackArr;
     private int maxsize;
-
+    /**
+     * Constructs the object.
+     */
     Deque() {
         maxsize = 10000;
         size = 0;
         stackArr = new int[maxsize];
     }
+    /**
+     * Pushes a left.
+     *
+     * @param      num   The number
+     */
     void pushLeft(int num) {
         int temp;
         for (int i = size + 1; i > 0; i--) {
@@ -21,12 +30,20 @@ final class Deque {
         size++;
         printStack();
     }
+    /**
+     * Pushes a right.
+     *
+     * @param      num   The number
+     */
     void pushRight(int num) {
         stackArr[size] = num;
         size++;
         printStack();
 
     }
+    /**
+     * function_description.
+     */
     void popLeft() {
 
         if (size == 0) {
@@ -40,6 +57,9 @@ final class Deque {
             printStack();
         }
     }
+    /**
+     * function_description.
+     */
     void popRight() {
         if (size == 0) {
             System.out.println("Deck is empty");
@@ -48,9 +68,17 @@ final class Deque {
             printStack();
         }
     }
+    /**
+     * Gets the size.
+     *
+     * @return     The size.
+     */
     int getSize() {
-        return size ;
+        return size;
     }
+    /**
+     * function_description.
+     */
     void printStack() {
         if (size == 0) {
             System.out.println("[]");
@@ -69,7 +97,9 @@ final class Deque {
         }
     }
 }
-
+/**
+ * Class for solution.
+ */
 class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
