@@ -3,6 +3,8 @@ import java.util.Scanner;
  * Class for solution.
  */
 class Solution {
+    private Solution() {
+    }
     /**
      * Main function.
      *
@@ -39,3 +41,4 @@ class Solution {
         }
     }
 }
+
