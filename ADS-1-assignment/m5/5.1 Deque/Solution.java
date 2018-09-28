@@ -4,8 +4,17 @@ import java.util.Arrays;
  * item_description.
  */
 final class Deque {
+    /**
+     * var_description.
+     */
     private int size;
+    /**
+     * var_description.
+     */
     private int[] stackArr;
+    /**
+     * var_description.
+     */
     private int maxsize;
     /**
      * Constructs the object.
@@ -20,7 +29,7 @@ final class Deque {
      *
      * @param      num   The number
      */
-    void pushLeft(int num) {
+    void pushLeft(final int num) {
         int temp;
         for (int i = size + 1; i > 0; i--) {
             temp = stackArr[i - 1];
@@ -35,7 +44,7 @@ final class Deque {
      *
      * @param      num   The number
      */
-    void pushRight(int num) {
+    void pushRight(final int num) {
         stackArr[size] = num;
         size++;
         printStack();
@@ -101,6 +110,11 @@ final class Deque {
  * Class for solution.
  */
 class Solution {
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         Deque dq = new Deque();
