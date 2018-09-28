@@ -3,6 +3,9 @@ import java.util.Scanner;
  * Stack class.
  */
 class Stack {
+    /**
+     * { var_description }.
+     */
     private String[] data;
     /**
      * var_description.
