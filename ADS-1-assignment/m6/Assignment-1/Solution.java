@@ -79,12 +79,13 @@ class AddLargeNumbers {
 	}
 
 	public static String digitsToNumber(StackLinkedList list) {
-		String str = "";
-		str = list.display();
-		StringBuilder st = new StringBuilder();
-		st.append(str);
-		str=""+st.reverse();
-		return str;
+		// String str = "";
+		// str = list.display();
+		// StringBuilder st = new StringBuilder();
+		// st.append(str);
+		// str=""+st.reverse();
+		// return str;
+		return null;
 	}
 
 	public static StackLinkedList addLargeNumbers(StackLinkedList list1, StackLinkedList list2) {
