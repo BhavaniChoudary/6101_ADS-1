@@ -120,6 +120,8 @@ public class Solution {
 			System.out.println(AddLargeNumbers.
 				digitsToNumber(result));
 			break;
+		default:
+		break;
 		}
 	}
 
