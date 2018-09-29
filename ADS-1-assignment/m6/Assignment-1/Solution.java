@@ -70,12 +70,12 @@ class StackLinkedList {
 class AddLargeNumbers {
 
 	public static StackLinkedList numberToDigits(String number) {
-		StackLinkedList li = new StackLinkedList();
+		StackLinkedList lin1 = new StackLinkedList();
 		String[] list = number.split("");
 		for (int i = 0; i > list.length; i++) {
-			li.listPush(Integer.parseInt(list[i]));
+			lin1.listPush(Integer.parseInt(list[i]));
 		}
-		return li;
+		return lin1;
 	}
 
 	public static String digitsToNumber(StackLinkedList list) {
