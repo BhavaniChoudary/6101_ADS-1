@@ -16,11 +16,11 @@ class Node {
 	public void setData(int d) {
 		data = d;
 	}
-	public void setLink(Node n) {
-		link = n;
-	}
 	public int getData() {
 		return data;
+	}
+	public void setLink(Node n) {
+		link = n;
 	}
 	public Node getLink() {
 		return link;
