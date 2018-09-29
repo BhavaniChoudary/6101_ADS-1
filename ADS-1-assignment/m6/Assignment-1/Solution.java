@@ -89,8 +89,8 @@ class AddLargeNumbers {
 	}
 
 	public static StackLinkedList addLargeNumbers(StackLinkedList list1, StackLinkedList list2) {
-		StackLinkedList ans = new StackLinkedList();
-		return ans;
+		StackLinkedList res = new StackLinkedList();
+		return res;
 	}
 }
 
