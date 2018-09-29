@@ -69,7 +69,7 @@ class StackLinkedList {
     /**
      * var_description.
      */
-    protected Node top;
+    private Node top;
     /**
      * var_description.
      */
@@ -191,6 +191,11 @@ class AddLargeNumbers {
  * Class for solution.
  */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+    }
     /**
      * Main function description.
      *
