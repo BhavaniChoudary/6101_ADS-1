@@ -106,8 +106,7 @@ class StackLinkedList {
         Node nptr = new Node(data, null);
         if (top == null) {
             top = nptr;
-        }
-        else {
+        } else {
             nptr.setLink(top);
             top = nptr;
         }
