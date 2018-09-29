@@ -7,11 +7,11 @@ class Node {
     /**
      * var_description.
      */
-    protected int data;
+    private int data;
     /**
      * var_description.
      */
-    protected Node link;
+    private Node link;
     /**
      * Constructs the object.
      */
@@ -190,7 +190,7 @@ class AddLargeNumbers {
 /**
  * Class for solution.
  */
-public class Solution {
+final public class Solution {
     /**
      * Constructs the object.
      */
