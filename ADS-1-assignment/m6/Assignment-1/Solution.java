@@ -72,7 +72,7 @@ class AddLargeNumbers {
 	public static StackLinkedList numberToDigits(String number) {
 		StackLinkedList lin1 = new StackLinkedList();
 		String[] list = number.split("");
-		for (int i = 0; i > list.length; i++) {
+		for (int i = 0; i < list.length; i++) {
 			lin1.listPush(Integer.parseInt(list[i]));
 		}
 		return lin1;
