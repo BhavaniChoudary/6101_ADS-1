@@ -1,5 +1,5 @@
 import java.util.*;
-import java.lang.StringBuilder;
+//import java.lang.StringBuilder;
 /**
  * Class for node.
  */
@@ -111,7 +111,7 @@ class StackLinkedList {
 		size++;
 	}
 	/**
-	 * pops the element
+	 * pops the element.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
@@ -122,7 +122,7 @@ class StackLinkedList {
 		return ptr.getData();
 	}
 	/**
-	 * displays elements
+	 * displays elements.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
