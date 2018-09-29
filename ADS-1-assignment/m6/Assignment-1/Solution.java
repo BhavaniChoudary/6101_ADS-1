@@ -69,8 +69,14 @@ class StackLinkedList {
 }
 
 class AddLargeNumbers {
-
-	public static StackLinkedList numberToDigits(String number) {
+	/**
+	 * function_description.
+	 *
+	 * @param      number  The number
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static StackLinkedList numberToDigits(final String number) {
 		StackLinkedList link1 = new StackLinkedList();
 		String[] list = number.split("");
 		for (int i = 0; i < list.length; i++) {
@@ -78,24 +84,44 @@ class AddLargeNumbers {
         }
 		return link1;
 	}
-
-	public static String digitsToNumber(StackLinkedList list) {
+	/**
+	 * function_description.
+	 *
+	 * @param      list  The list
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static String digitsToNumber(final StackLinkedList list) {
 		String str = "";
 		str = list.display();
 		StringBuilder st = new StringBuilder();
 		st.append(str);
-		str=""+st.reverse();
+		str = "" + st.reverse();
 		return str;
 	}
-
-	public static StackLinkedList addLargeNumbers(StackLinkedList list1, StackLinkedList list2) {
+	/**
+	 * Adds large numbers.
+	 *
+	 * @param      list1  The list 1
+	 * @param      list2  The list 2
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static StackLinkedList addLargeNumbers(final StackLinkedList list1, final StackLinkedList list2) {
 		StackLinkedList res = new StackLinkedList();
 		return res;
 	}
 }
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Main function description.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();
 		String p = sc.nextLine();
