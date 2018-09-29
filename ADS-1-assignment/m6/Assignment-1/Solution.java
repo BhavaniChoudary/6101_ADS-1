@@ -1,62 +1,131 @@
 import java.util.*;
 import java.lang.StringBuilder;
-
+/**
+ * Class for node.
+ */
 class Node {
 	protected int data;
+	/**
+	 * var_description.
+	 */
 	protected Node link;
-
+	/**
+	 * Constructs the object.
+	 */
 	public Node() {
 		link = null;
 		data = 0;
 	}
-	public Node(int d, Node n) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      d     { parameter_description }
+	 * @param      n     { parameter_description }
+	 */
+	public Node(final int d, final Node n) {
 		data = d;
 		link = n;
 	}
-	public void setData(int d) {
+	/**
+	 * Sets the data.
+	 *
+	 * @param      d     { parameter_description }
+	 */
+	public void setData(final int d) {
 		data = d;
 	}
+	/**
+	 * Gets the data.
+	 *
+	 * @return     The data.
+	 */
 	public int getData() {
 		return data;
 	}
-	public void setLink(Node n) {
+	/**
+	 * Sets the link.
+	 *
+	 * @param      n     { parameter_description }
+	 */
+	public void setLink(final Node n) {
 		link = n;
 	}
+	/**
+	 * Gets the link.
+	 *
+	 * @return     The link.
+	 */
 	public Node getLink() {
 		return link;
 	}
 }
-
+/**
+ * List of stack linklist.
+ */
 class StackLinkedList {
-	protected Node top ;
-	protected int size ;
-
+	/**
+	 * var_description.
+	 */
+	protected Node top;
+	/**
+	 * var_description.
+	 */
+	protected int size;
+	/**
+	 * Constructs the object.
+	 */
 	public StackLinkedList() {
 		top = null;
 		size = 0;
 	}
+	/**
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	public boolean isEmpty() {
 		return top == null;
 	}
+	/**
+	 * Gets the size.
+	 *
+	 * @return     The size.
+	 */
 	public int getSize() {
 		return size;
 	}
-	public void listPush(int data) {
-		Node nptr = new Node (data, null);
-		if (top == null)
+	/**
+	 * pushs element.
+	 *
+	 * @param      data  The data
+	 */
+	public void listPush(final int data) {
+		Node nptr = new Node(data, null);
+		if (top == null) {
 			top = nptr;
+		}
 		else {
 			nptr.setLink(top);
 			top = nptr;
 		}
-		size++ ;
+		size++;
 	}
+	/**
+	 * pops the element
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int listPop() {
 		Node ptr = top;
 		top = ptr.getLink();
-		size-- ;
+		size--;
 		return ptr.getData();
 	}
+	/**
+	 * displays elements
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public String display() {
 		String str = "";
 		Node ptr = top;
@@ -67,7 +136,9 @@ class StackLinkedList {
 		return str;
 	}
 }
-
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
 	/**
 	 * function_description.
@@ -107,7 +178,8 @@ class AddLargeNumbers {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public static StackLinkedList addLargeNumbers(final StackLinkedList list1, final StackLinkedList list2) {
+	public static StackLinkedList addLargeNumbers(final
+		StackLinkedList list1, final StackLinkedList list2) {
 		StackLinkedList res = new StackLinkedList();
 		return res;
 	}
