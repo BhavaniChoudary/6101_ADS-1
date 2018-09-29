@@ -13,17 +13,19 @@ class Node {
 		data = d;
 		link = n;
 	}
-	public void setLink(Node n) {
-		link = n;
-	}
 	public void setData(int d) {
 		data = d;
 	}
-	public Node getLink() {
-		return link;
-	}	public int getData() {
+	public void setLink(Node n) {
+		link = n;
+	}
+	public int getData() {
 		return data;
 	}
+	public Node getLink() {
+		return link;
+	}
+
 }
 
 class StackLinkedList {
