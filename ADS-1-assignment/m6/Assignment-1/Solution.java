@@ -25,7 +25,6 @@ class Node {
 	public Node getLink() {
 		return link;
 	}
-
 }
 
 class StackLinkedList {
