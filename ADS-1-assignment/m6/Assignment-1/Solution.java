@@ -60,7 +60,7 @@ class StackLinkedList {
 		String str = "";
 		Node ptr = top;
 		while (ptr != null) {
-			str += " " + ptr.getData();
+			str += "" + ptr.getData();
 			ptr = ptr.getLink();
 		}
 		return str;
@@ -70,20 +70,20 @@ class StackLinkedList {
 class AddLargeNumbers {
 
 	public static StackLinkedList numberToDigits(String number) {
-		StackLinkedList lin1 = new StackLinkedList();
+		StackLinkedList li = new StackLinkedList();
 		String[] list = number.split("");
 		for (int i = 0; i < list.length; i++) {
-			lin1.listPush(Integer.parseInt(list[i]));
-		}
-		return lin1;
+            li.listPush(Integer.parseInt(list[i]));
+        }
+		return li;
 	}
 
 	public static String digitsToNumber(StackLinkedList list) {
 		String str = "";
-		// str = list.display();
-		// StringBuilder st = new StringBuilder();
-		// st.append(str);
-		// str=""+st.reverse();
+		str = list.display();
+		StringBuilder st = new StringBuilder();
+		st.append(str);
+		str=""+st.reverse();
 		return str;
 	}
 
