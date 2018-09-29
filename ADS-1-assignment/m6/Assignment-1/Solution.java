@@ -60,7 +60,7 @@ class StackLinkedList {
 		String str = "";
 		Node ptr = top;
 		while (ptr != null) {
-			str += "" + ptr.getData();
+			str += " " + ptr.getData();
 			ptr = ptr.getLink();
 		}
 		return str;
