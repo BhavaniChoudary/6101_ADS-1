@@ -102,17 +102,23 @@ public class Solution {
 		String q = sc.nextLine();
 		switch (input) {
 		case "numberToDigits":
-			StackLinkedList pDigits = AddLargeNumbers.numberToDigits(p);
-			StackLinkedList qDigits = AddLargeNumbers.numberToDigits(q);
-			System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
-			System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
+			StackLinkedList pDigits = AddLargeNumbers.
+			numberToDigits(p);
+			StackLinkedList qDigits = AddLargeNumbers.
+			numberToDigits(q);
+			System.out.println(AddLargeNumbers.
+				digitsToNumber(pDigits));
+			System.out.println(AddLargeNumbers.
+				digitsToNumber(qDigits));
 			break;
 
 		case "addLargeNumbers":
 			pDigits = AddLargeNumbers.numberToDigits(p);
 			qDigits = AddLargeNumbers.numberToDigits(q);
-			StackLinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-			System.out.println(AddLargeNumbers.digitsToNumber(result));
+			StackLinkedList result = AddLargeNumbers.
+			addLargeNumbers(pDigits, qDigits);
+			System.out.println(AddLargeNumbers.
+				digitsToNumber(result));
 			break;
 		}
 	}
