@@ -16,8 +16,10 @@ class Steque {
 	Node node = new Node();
 	node.data = data;
 	node.next = head;
-	if (head == null) tail = node;
-	head = node;
+	if (head == null) {
+		tail = node;
+		head = node;
+	}
 	print();
 }
 public void enqueue(int data) {
@@ -57,7 +59,6 @@ class Solution {
 	public static void main(String[] args) {
 		Steque li = new Steque();
 		li.push(1);
-		//System.out.println("asdjhfgjshadfg");
 		li.push(2);
 		li.push(5);
 		li.enqueue(3);
@@ -67,6 +68,5 @@ class Solution {
 		li.pop();
 		li.pop();
 		li.pop();
-		// li.pop();
 	}
 }
