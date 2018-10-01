@@ -11,6 +11,11 @@ final class Solution {
          * empty constructor.
          */
     }
+    /**
+     * Main function description.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int numb = sc.nextInt();
