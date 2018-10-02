@@ -1,215 +1,232 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
- * class for Solution i.e input handling.
+ * Class for tournament.
+ */
+class Tournament implements Comparable {
+    /**
+     * String type of tName.
+     */
+    private String tName;
+    /**
+     * winner of type int.
+     */
+    private int winner;
+    /**
+     * losser of type int.
+     */
+    private int losser;
+    /**
+     * draw of type int.
+     */
+    private int draw;
+    /**
+     * Constructs the object.
+     * Time complexity is 1.
+     */
+    Tournament() {
+        //constructor not used.
+    }
+    /**
+     * Constructs the object.
+     *
+     * @param      n     n of type String.
+     * @param      w     w of type int.
+     * @param      l     l of type int.
+     * @param      d     d of type int.
+     */
+    Tournament(final String n, final int w, final int l, final int d) {
+        this.tName = n;
+        this.winner = w;
+        this.losser = l;
+        this.draw = d;
+    }
+    /**
+     * Gets the losser.
+     * Time complexity is 1.
+     *
+     * @return     The losser.
+     */
+    public int getLosser() {
+        return this.losser;
+    }
+    /**
+     * Gets the draw.
+     * Time complexity is 1.
+     *
+     * @return     The draw.
+     */
+    public int getDraw() {
+        return this.draw;
+    }
+    /**
+     * Compares the objects.
+     *
+     * @param      ob    Object type ob.
+     *
+     * @return     returns 1 if true or else -1.
+     * Time complexity is 1.
+     */
+    public int compareTo(final Object ob) {
+        //System.out.println("i am compareto");
+        Tournament t = (Tournament) ob;
+        if (this.getWinner() > t.getWinner()) {
+            return 1;
+        } else if (this.getWinner() < t.getWinner()) {
+            return -1;
+        }
+        if (this.getLosser() < t.getLosser()) {
+            return 1;
+        } else if (this.getLosser() > t.getLosser()) {
+            return -1;
+        }
+        if (this.getDraw() > t.getDraw()) {
+            return 1;
+        } else if (this.getDraw() < t.getDraw()) {
+            return -1;
+        }
+        return 0;
+    }
+    /**
+     * used to get name.
+     * Time complexity is 1.
+     *
+     * @return     return the testname.
+     */
+    public String getname() {
+        return this.tName;
+    }
+    /**
+     * Gets the winner.
+     * Time complexity is 1.
+     *
+     * @return     The winner.
+     */
+    public int getWinner() {
+        return this.winner;
+    }
+}
+/**
+ * Class for Selection sort.
+ */
+class SelectionSort {
+    /**
+     * tArray of type Tournament.
+     */
+    private Tournament[] tArray;
+    /**
+     * size of type int.
+     */
+    private int size;
+    /**
+     * Constructs the object.
+     * Time complexity is 1.
+     */
+    SelectionSort() {
+        this.size = 0;
+        final int ten = 10;
+        this.tArray = new Tournament[ten];
+    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     * Time complexity is N.
+     */
+    public String toString() {
+        int res = 0;
+        String string = "";
+        for (res = 0; res < size - 1; res++) {
+            string += tArray[res].getname() + ",";
+        }
+        string += tArray[res].getname();
+        return string;
+    }
+    /**
+     * Adds.
+     *
+     * @param      g     G of type Tournament.
+     * Time complexity is 1.
+     */
+    public void add(final Tournament g) {
+        if (size == tArray.length) {
+            resize();
+        }
+        tArray[size++] = g;
+    }
+    /**
+     * Sorting using selection.
+     * Time complexity is N^2.
+     */
+    public void selectionsort() {
+        for (int i = 0; i < size; i++) {
+            int min = i;
+            for (int j = i + 1; j < size; j++) {
+                if (tArray[j].compareTo(tArray[min]) == 1) {
+                    min = j;
+                }
+            }
+            swapping(tArray, i, min);
+        }
+    }
+    /**
+     * used to return the size.
+     * Time complexity is 1.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int size() {
+        return size;
+    }
+    /**
+     * used to resize the lenth of an array.
+     * Time complexity is N.
+     */
+    public void resize() {
+        tArray = Arrays.copyOf(tArray, 2 * tArray.length);
+    }
+    /**
+     * Used to swap the position of the variables when it is small.
+     * The time complexity for resize() is 1.
+     *
+     *
+     * @param      arr   The arr
+     * @param      i      Integer i.
+     * @param      j     Integer j.
+     */
+    public void swapping(final Comparable[] arr, final int i, final int j) {
+        Comparable temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+/**
+ * Solution class.
  */
 public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
+        // constructor not used.
     }
     /**
-     * { This is main method to Handle the inputs }.
+     * Client program.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner scan = new Scanner(System.in);
-        TeamAdd addTeam = new TeamAdd();
-        while (scan.hasNext()) {
-            String[] tokens = scan.nextLine().split(",");
-            addTeam.add(tokens);
+        final int three = 3;
+        Scanner s = new Scanner(System.in);
+        SelectionSort ss = new SelectionSort();
+        while (s.hasNext()) {
+            String[] token = s.nextLine().split(",");
+            ss.add(new Tournament(token[0],
+                Integer.parseInt(token[1]),
+                Integer.parseInt(token[2]),
+                Integer.parseInt(token[three])));
         }
-        addTeam.insertionsort();
-        addTeam.print();
-
-    }
-}
-/**
- * Class for team.
- */
-class Team {
-    /**
-     * { Team name }.
-     */
-    private String name;
-    /**
-     * { Number of matches won by team }.
-     */
-    private int wins;
-    /**
-     * { number of matches lost }.
-     */
-    private int loses;
-    /**
-     * { number of matches tie }.
-     */
-    private int draws;
-    /**
-     * Constructs the object.
-     *
-     * @param      info  The information is String array
-     *           which contains team name, wins, loses, draws
-     */
-    Team(final String[] info) {
-        int i = 0;
-        name = info[i];
-        wins = Integer.parseInt(info[++i]);
-        loses = Integer.parseInt(info[++i]);
-        draws = Integer.parseInt(info[++i]);
-    }
-    /**
-     * Gets the wins.
-     *
-     * @return     The wins.
-     */
-    public int getWins() {
-        return wins;
-    }
-    /**
-     * Gets the loses.
-     *
-     * @return     The loses.
-     */
-    public int getLoses() {
-        return loses;
-    }
-    /**
-     * Gets the draws.
-     *
-     * @return     The draws.
-     */
-    public int getDraws() {
-        return draws;
-    }
-    /**
-     * Gets the name.
-     *
-     * @return     The name.
-     */
-    public String getName() {
-        return name;
-    }
-
-}
-/**
- * Class for team add.
- */
-class TeamAdd {
-    /**
-     * { Team class array of objects }.
-     */
-    private Team[] teams;
-    /**
-     * { size of Team array }.
-     */
-    private int size;
-    /**
-     * Constructs the object.
-     */
-    TeamAdd() {
-        final int ten = 10, zero = 0;
-        teams = new Team[ten];
-        size = zero;
-    }
-    /**
-     * adds team objects into teams array.
-     *
-     * @param      info  The information
-     */
-    public void add(final String[] info) {
-        teams[size++] = new Team(info);
-    }
-
-    /**
-     * Sorting based on selection sort algorithm.
-     */
-    public void insertionsort() {
-        Insertionsort sort = new Insertionsort();
-        teams = sort.insertionsortt(teams, size);
-    }
-    /**
-     * To display elements of the sorted array.
-     */
-    public void print() {
-        for (int i = 0; i < size - 1; i++) {
-            System.out.print(teams[i].getName() + ",");
-        } System.out.println(teams[size - 1].getName());
-    }
-}
-/**
- * Class for selection sort.
- */
-class Insertionsort {
-    /**
-     * Constructs the object.
-     */
-    Insertionsort() {
-
-    }
-    /**
-     * To perform selection sort.
-     *
-     * @param      team  The teams
-     * @param      size   The size
-     *
-     * @return     sorted array of team objects
-     * Time complexity of This method is O(N^2)
-     *  because we are using nested for loops
-     *   in worst case it may go up to O(N^2)
-     */
-    public Team[] insertionsortt(final Team[] team, final int size) {
-        Team[] teams = team;
-        for (int i = 0; i < size; i++) {
-            for (int j = i; j > 0; j--) {
-                if (compareTo(teams[j - 1].getWins(), teams[j].getWins()) > 0) {
-                    swap(j - 1, j, teams);
-                } else if (compareTo(teams[j - 1].getWins(),
-                                     teams[j].getWins()) == 0) {
-                    if (compareTo(teams[j - 1].getLoses(),
-                                  teams[j].getLoses()) < 0) {
-                        swap(j - 1, j, teams);
-                    } else if (compareTo(teams[j - 1].getLoses(),
-                                 teams[j].getLoses()) == 0) {
-                        if (compareTo(teams[j - 1].getDraws(),
-                                      teams[j].getDraws()) > 0) {
-                            swap(j - 1, j, teams);
-                        }
-                    }
-                }
-            }
-        }
-        return teams;
-    }
-    /**
-     * swapping the team objects.
-     *
-     * @param      index1  The index 1
-     * @param      index2  The index 2
-     * @param      teams   The teams
-     */
-    public void swap(final int index1, final int index2, final Team[] teams) {
-        Team temp;
-        temp = teams[index1];
-        teams[index1] = teams[index2];
-        teams[index2] = temp;
-    }
-    /**
-     * compares two values.
-     *
-     * @param      a     { index position }
-     * @param      b     { index position }
-     *
-     * @return     -1 if first element is less, 1 if greater and 0 if equal
-     *
-     */
-    public int compareTo(final int a, final int b) {
-        if (a < b) {
-            return 1;
-        } else if (a == b) {
-            return 0;
-        } else {
-            return -1;
-        }
+        ss.selectionsort();
+        System.out.println(ss);
     }
 }
