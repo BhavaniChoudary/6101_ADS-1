@@ -1,0 +1,25 @@
+ARRAY [E,A,S,Y,Q,U,E,S,T,I,O,N],  I = 0
+
+ARRAY [A,E,S,Y,Q,U,E,S,T,I,O,N],  I = 1
+
+ARRAY [A,E,S,Y,Q,U,E,S,T,I,O,N],  I = 2
+
+ARRAY [A,E,E,Y,Q,U,S,S,T,I,O,N],  I = 3
+
+ARRAY [A,E,E,I,Q,U,S,S,T,Y,O,N],  I = 4
+
+ARRAY [A,E,E,I,N,U,S,S,T,Y,O,Q],  I = 5
+
+ARRAY [A,E,E,I,N,O,Q,S,T,Y,U,S],  I = 6
+
+ARRAY [A,E,E,I,N,O,Q,S,T,Y,U,S],  I = 7
+
+ARRAY [A,E,E,I,N,O,Q,S,T,Y,U,S],  I = 8
+
+ARRAY [A,E,E,I,N,O,Q,S,S,Y,U,T],  I = 9
+
+ARRAY [A,E,E,I,N,O,Q,S,S,T,U,Y],  I = 10
+
+ARRAY [A,E,E,I,N,O,Q,S,S,T,U,Y],  I = 11
+
+ARRAY [A,E,E,I,N,O,Q,S,S,T,U,Y],  I = 12
