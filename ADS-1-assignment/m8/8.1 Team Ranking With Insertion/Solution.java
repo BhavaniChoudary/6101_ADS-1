@@ -25,7 +25,13 @@ public final class Solution {
 
     }
 }
+/**
+ * Class for team.
+ */
 class Team {
+    /**
+     * Team name.
+     */
     private String name;
     /**
      * { Number of matches won by team }.
