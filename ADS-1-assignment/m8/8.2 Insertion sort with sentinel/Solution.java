@@ -74,9 +74,19 @@ class Team {
     public int getLoses() {
         return loses;
     }
+    /**
+     * Gets the draws.
+     *
+     * @return     The draws.
+     */
     public int getDraws() {
         return draws;
     }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         return name;
     }
@@ -171,12 +181,28 @@ class Insertionsort {
         }
         return teams;
     }
+    /**
+     * swapping the team objects.
+     *
+     * @param      index1  The index 1
+     * @param      index2  The index 2
+     * @param      teams   The teams
+     */
     public void swap(final int index1, final int index2, final Team[] teams) {
         Team temp;
         temp = teams[index1];
         teams[index1] = teams[index2];
         teams[index2] = temp;
     }
+    /**
+     * compares two values.
+     *
+     * @param      a     { index position }
+     * @param      b     { index position }
+     *
+     * @return     -1 if first element is less, 1 if greater and 0 if equal
+     *
+     */
     public int compareTo(final int a, final int b) {
         if (a < b) {
             return 1;
