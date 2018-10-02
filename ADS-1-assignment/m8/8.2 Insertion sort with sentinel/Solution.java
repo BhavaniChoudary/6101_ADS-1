@@ -3,8 +3,16 @@ import java.util.Scanner;
  * class for Solution i.e input handling.
  */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
     }
+    /**
+     * { This is main method to Handle the inputs }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         TeamAdd addTeam = new TeamAdd();
@@ -17,9 +25,25 @@ public final class Solution {
 
     }
 }
-class Team {    private String name;
+/**
+ * Class for team.
+ */
+class Team {
+    /**
+     * { Team name }.
+     */
+    private String name;
+    /**
+     * { Number of matches won by team }.
+     */
     private int wins;
+    /**
+     * { number of matches lost }.
+     */
     private int loses;
+    /**
+     * { number of matches tie }.
+     */
     private int draws;
     /**
      * Constructs the object.
@@ -34,6 +58,11 @@ class Team {    private String name;
         loses = Integer.parseInt(info[++i]);
         draws = Integer.parseInt(info[++i]);
     }
+    /**
+     * Gets the wins.
+     *
+     * @return     The wins.
+     */
     public int getWins() {
         return wins;
     }
@@ -122,7 +151,7 @@ class Insertionsort {
     public Team[] insertionsortt(final Team[] team, final int size) {
         Team[] teams = team;
         for (int i = 0; i < size; i++) {
-            for (int j = i; j < 0; j--) {
+            for (int j = i; j > 0; j--) {
                 if (compareTo(teams[j - 1].getWins(), teams[j].getWins()) > 0) {
                     swap(j - 1, j, teams);
                 } else if (compareTo(teams[j - 1].getWins(),
