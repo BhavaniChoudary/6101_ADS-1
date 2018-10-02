@@ -170,7 +170,7 @@ class SelectionSort {
         }
     }
     /**
-     * used to return the size.
+     * This is used to return the size.
      * Time complexity is 1.
      *
      * @return     { description_of_the_return_value }
@@ -179,14 +179,14 @@ class SelectionSort {
         return size;
     }
     /**
-     * used to resize the lenth of an array.
+     * This is used to resize the lenth of an array.
      * Time complexity is N.
      */
     public void resize() {
         tArray = Arrays.copyOf(tArray, 2 * tArray.length);
     }
     /**
-     * Used to swap the position of the variables when it is small.
+     * this is used to swap the position of the variables when it is small.
      * The time complexity for resize() is 1.
      *
      *
