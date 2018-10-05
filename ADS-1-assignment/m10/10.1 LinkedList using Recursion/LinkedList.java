@@ -4,10 +4,10 @@ class LinkedList<E> {
         Node next;
     }
     Node head, tail;
-    Node thead = head;
+    Node head1 = head;
     int count = 0;
     int size = 0;
-    public void addAtHead(E data) {
+    public void addAhead1(E data) {
         Node node = new Node();
         node.data = data;
         node.next = head;
@@ -15,28 +15,28 @@ class LinkedList<E> {
         head = node;
         size++;
         print();
-        thead = head;
+        head1 = head;
     }
     public void insertAt(int index, E data) {
         try {
-            if (index >= 0 && index >= size ) {
+            if (index >= 0 && index <= size ) {
                 if (index == 0) {
-                    addAtHead(data);
+                    addAhead1(data);
                     return;
                 }
                 if (count == index - 1) {
                     Node node = new Node();
                     node.data = data;
-                    node.next = thead.next;
-                    thead.next = node;
+                    node.next = head1.next;
+                    head1.next = node;
                     size++;
                     print();
-                    thead = head;
+                    head1 = head;
                     // }
                 } else {
                     count++;
-                    if (thead.next != null) {
-                        thead = thead.next;
+                    if (head1.next != null) {
+                        head1 = head1.next;
                     }
                     insertAt(index, data);
                 }
@@ -45,21 +45,21 @@ class LinkedList<E> {
             }
         } catch (Exception e) {
             System.out.println("Can't insert at this position.");
-            thead = head;
+            head1 = head;
         }
     }
     public void print() {
-        Node thead = head;
-        while (thead != null && thead.next != null) {
-            System.out.print(thead.data + ", ");
-            thead = thead.next;
+        Node head1 = head;
+        while (head1 != null && head1.next != null) {
+            System.out.print(head1.data + ", ");
+            head1 = head1.next;
         }
-        System.out.println(thead.data);
+        System.out.println(head1.data);
         count = 0;
     }
     void reverse() {
         head = reverseHelper(head);
-        thead = head;
+        head1 = head;
         print();
     }
     Node reverseHelper(Node head) {
