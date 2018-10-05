@@ -18,7 +18,7 @@ public final class Solution {
                 try {
                     li.reverse();
                 } catch (Exception e) {
-                    System.out.println("No elements to reverse.");
+                    System.out.println("no elements to reverse.");
                 }
                 break;
             default:
