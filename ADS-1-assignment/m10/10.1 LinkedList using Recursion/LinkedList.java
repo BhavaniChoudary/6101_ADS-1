@@ -19,7 +19,7 @@ class LinkedList<E> {
     }
     public void insertAt(int index, E data) {
         try {
-            if (index >= 0 && index >= size ) {
+            if (index >= 0 && index <= size ) {
                 if (index == 0) {
                     addAhead1(data);
                     return;
