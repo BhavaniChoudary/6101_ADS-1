@@ -45,7 +45,7 @@ class Student {
     }
     // public void sort(){
     //     Insertion insertionobj = new Insertion();
-    //     insertionobj.sort(Student);
+    //     insertionobj.sort(students1);
     // }
 }
 public final class Solution {
