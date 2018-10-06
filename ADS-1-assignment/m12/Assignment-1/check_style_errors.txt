@@ -17,11 +17,10 @@ Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:49:89: Parameter reservation should be final. [FinalParameters]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:49:96: 'reservation' hides a field. [HiddenField]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:117:11: Variable 'date' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:118:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:132:46: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:132:47: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:132:50: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:132:51: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:157:13: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:135:46: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:135:47: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:135:50: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:135:51: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:160:13: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 23 errors.

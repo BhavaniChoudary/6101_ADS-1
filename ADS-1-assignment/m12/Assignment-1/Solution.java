@@ -115,6 +115,9 @@ class Student {
      * var_description.
      */
     int[] date;
+    /**
+     * function_description.
+     */
     public void dateSort() {
         dob1 = this.dob.split("-");
         date = new int[dob1.length];
