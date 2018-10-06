@@ -37,9 +37,9 @@ Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:43:47: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:43:50: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:43:51: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:47: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:48:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:50:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:52:13: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:51: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:52:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:54:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:56:13: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
 Checkstyle ends with 42 errors.

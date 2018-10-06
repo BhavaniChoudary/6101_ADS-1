@@ -43,6 +43,10 @@ class Student {
         str = this.name + "," + this.totmarks+","+this.reservation;
         return str;
     }
+    // public void sort(){
+    //     Insertion insertionobj = new Insertion();
+    //     insertionobj.sort(Student);
+    // }
 }
 public final class Solution {
     private Solution() {
