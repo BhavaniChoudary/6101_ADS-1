@@ -43,7 +43,7 @@ class Student {
         str = this.name + "," + this.totmarks+","+this.reservation;
         return str;
     }
-}   
+}
 public final class Solution {
     private Solution() {
     }
