@@ -1,23 +1,23 @@
 import java.util.Scanner;
 class Student {
-	private String name;
-	private String dob;
-	private int sub1;
-	private int sub2;
-	private int sub3;
-	private int totmarks;
-	private String reservation;
+    private String name;
+    private String dob;
+    private int sub1;
+    private int sub2;
+    private int sub3;
+    private int totmarks;
+    private String reservation;
 
-	public Student(String name, String dob, int sub1, int sub2, int sub3, int totmarks, String reservation) {
-		this.name = name;
-		this.dob = dob;
-		this.sub1 = sub1;
-		this.sub2 = sub2;
-		this.sub3 = sub3;
-		this.totmarks = totmarks;
-		this.reservation = reservation;
-	}
-	public String getName() {
+    public Student(String name, String dob, int sub1, int sub2, int sub3, int totmarks, String reservation) {
+        this.name = name;
+        this.dob = dob;
+        this.sub1 = sub1;
+        this.sub2 = sub2;
+        this.sub3 = sub3;
+        this.totmarks = totmarks;
+        this.reservation = reservation;
+    }
+    public String getName() {
         return this.name;
     }
     public String getDob() {
@@ -39,16 +39,16 @@ class Student {
         return this.reservation;
     }
     public String toString() {
-    	System.out.println(this.name + ", " + this.totmarks + ", " + this.reservation);
-    	System.out.println("\n");
-    	return "l";
+        String str;
+        str = this.name + "," + this.totmarks+","+this.reservation;
+        return str;
     }
 }   
 public final class Solution {
-	private Solution() {
-	}
-	public static void main(final String[] args) {
-		Scanner s = new Scanner(System.in);
+    private Solution() {
+    }
+    public static void main(final String[] args) {
+        Scanner s = new Scanner(System.in);
         int nq = s.nextInt();
         int nv = s.nextInt();
         int ur = s.nextInt();
@@ -58,5 +58,5 @@ public final class Solution {
         while (s.hasNext()) {
             s.nextLine();
         }
-	}
+    }
 }
