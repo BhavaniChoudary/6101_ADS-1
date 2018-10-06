@@ -14,6 +14,10 @@ class Student {
     /**
      * sub1 var_description.
      */
+    private String[] dob1;
+    /**
+     * var_description.
+     */
     private int sub1;
     /**
      * sub2 var_description.
@@ -106,6 +110,17 @@ class Student {
      */
     public String getReservation() {
         return this.reservation;
+    }
+    /**
+     * var_description.
+     */
+    int[] date;
+    public void dateSort() {
+        dob1 = this.dob.split("-");
+        date = new int[dob1.length];
+        for (int i = 0; i < dob1.length; i++) {
+            date[i] = Integer.parseInt(dob1[i]);
+        }
     }
     /**
      * Returns a string representation of the object.
