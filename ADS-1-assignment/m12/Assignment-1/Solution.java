@@ -49,12 +49,12 @@ public final class Solution {
     }
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-        int nq = s.nextInt();
-        int nv = s.nextInt();
-        int ur = s.nextInt();
-        int bc = s.nextInt();
-        int sc = s.nextInt();
-        int st = s.nextInt();
+        int N = Integer.parseInt(s.nextLine());
+        //int vacancies = Integer.parseInt(sca.nextLine());
+        int open = Integer.parseInt(s.nextLine());
+        int bc = Integer.parseInt(s.nextLine());
+        int sc = Integer.parseInt(s.nextLine());
+        int st = Integer.parseInt(s.nextLine());
         while (s.hasNext()) {
             s.nextLine();
         }

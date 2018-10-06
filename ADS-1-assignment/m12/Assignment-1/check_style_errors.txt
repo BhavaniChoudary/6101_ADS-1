@@ -41,5 +41,6 @@ Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:47: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:48:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:50:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m12\Assignment-1\Solution.java:52:13: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 42 errors.
+Checkstyle ends with 43 errors.
