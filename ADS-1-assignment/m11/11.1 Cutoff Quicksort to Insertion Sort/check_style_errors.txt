@@ -1,0 +1,17 @@
+Starting audit...
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:4: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:14:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:21:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:29:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:41:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:44:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:67:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:71: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:72:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:74:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 14 errors.
