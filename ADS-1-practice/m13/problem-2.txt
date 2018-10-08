@@ -1,0 +1,1 @@
+If the array is sorted in ascending order, then yes. It can have a min heap with the same elements that isn't completely sorted as long as each node is greater than its parent.For example, 2 4 6 8 10 12 14 is min heap, but so as 2 4 10 6 8 12 14.
