@@ -22,6 +22,11 @@ class MinHeap<E> {
         data = values;
         size = 0;
     }
+    /**
+     * Determines if heap.
+     *
+     * @return     True if heap, False otherwise.
+     */
     public Boolean isHeap() {
         for (int i = 0; i < (data.length - 1) / 2
             && (2 * i + 2 <= data.length - 1); i++) {
@@ -33,6 +38,9 @@ class MinHeap<E> {
         return true;
     }
 }
+/**
+ * item_description.
+ */
 final class Solution {
     /**
      * Constructs the object.
@@ -53,7 +61,6 @@ final class Solution {
         switch (datatype) {
             case "Double":
                 while (i < lines) {
-                    // if(sc.next().equals(""))
                     int j = 0;
                     String data = sc.nextLine();
                     if (data.equals("")) {
@@ -123,3 +130,4 @@ final class Solution {
         }
     }
 }
+

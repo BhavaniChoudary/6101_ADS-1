@@ -1,7 +1,4 @@
 Starting audit...
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m13\13.1 isMinHeap\Solution.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m13\13.1 isMinHeap\Solution.java:36: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m13\13.1 isMinHeap\Solution.java:47:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m13\13.1 isMinHeap\Solution.java:55:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
