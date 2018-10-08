@@ -47,11 +47,16 @@ final class Solution {
      */
     private Solution() {
     /**
-     * { function_description }
+     * function_description.
      *
      * @param      args  The arguments
      */
     }
+    /**
+     * function_description.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String datatype = sc.nextLine();
