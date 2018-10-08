@@ -5,6 +5,9 @@ import java.util.Scanner;
  * @param      <E>   Generics Variables.
  */
 class MinHeap<E> {
+    /**
+     * Comparable array.
+     */
     private Comparable[] data;
     private int size;
     MinHeap(final Comparable[] values) {
