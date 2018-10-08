@@ -9,7 +9,15 @@ class MinHeap<E> {
      * Comparable array.
      */
     private Comparable[] data;
+    /**
+     * Size of array.
+     */
     private int size;
+    /**
+     * Constructs the object.
+     *
+     * @param      values  The values
+     */
     MinHeap(final Comparable[] values) {
         data = values;
         size = 0;
@@ -26,7 +34,15 @@ class MinHeap<E> {
     }
 }
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     }
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
