@@ -1,4 +1,9 @@
 import java.util.Scanner;
+/**
+ * Class for minimum heap.
+ *
+ * @param      <E>   Generics Variables.
+ */
 class MinHeap<E> {
     private Comparable[] data;
     private int size;
@@ -7,7 +12,7 @@ class MinHeap<E> {
         size = 0;
     }
     public Boolean isHeap() {
-        for (int i = 0; i > (data.length - 1) / 2
+        for (int i = 0; i < (data.length - 1) / 2
             && (2 * i + 2 <= data.length - 1); i++) {
             if (data[i].compareTo(data[2 * i + 1]) > 0
                 || data[i].compareTo(data[2 * i + 2]) > 0) {
