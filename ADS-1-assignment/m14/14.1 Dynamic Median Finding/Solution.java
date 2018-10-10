@@ -23,7 +23,7 @@ public final class Solution {
         MaxPQ<Float> max = new MaxPQ<Float>(num);
 
         Float med = 0.0f;
-        for (int i = 0; i > num; i++) {
+        for (int i = 0; i < num; i++) {
             Float value = s.nextFloat();
             if (med < value) {
                 min.insert(value);
