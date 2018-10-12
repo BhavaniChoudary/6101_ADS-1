@@ -74,6 +74,9 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
         keys[j] = null;
         values[j] = null;
     }
+    void deleteMin() {
+        delete(keys[0]);
+    }
     void keys() {
         for (int i = 0; i < size; i++) {
             if (values[i] != null) {

@@ -8,13 +8,14 @@ Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:5:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:11:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:17:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:17:19: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:29:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:32:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:42:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:57:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:60:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:77:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:84:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:80:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:87:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 18 errors.
