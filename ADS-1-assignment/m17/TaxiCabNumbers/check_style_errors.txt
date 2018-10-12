@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:27: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:95: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:27:51: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.

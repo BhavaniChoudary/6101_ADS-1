@@ -24,7 +24,8 @@ class Taxinum implements Comparable<Taxinum> {
      * @param      number22  The number 2
      */
     Taxinum(final int number11, final int number22) {
-        this.sum = number11 * number11 * number11 + number22 * number22 * number22;
+        this.sum = number11 * number11 * number11 +
+        number22 * number22 * number22;
         this.number1 = number11;
         this.number2 = number22;
     }
@@ -93,7 +94,7 @@ public final class Solution {
         // constructor not used.
     }
     /**
-     * Main function description
+     * Main function description.
      *
      * @param      args  The arguments
      */
