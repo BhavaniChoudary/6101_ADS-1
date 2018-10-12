@@ -133,6 +133,9 @@ final class Solution {
  * Class for student.
  */
 class Student implements Comparable<Student> {
+    /**
+     * student name var_description.
+     */
     private String studentName;
     /**
      * dob var_description.
@@ -238,7 +241,8 @@ class Student implements Comparable<Student> {
      * @param      rc1            The rectangle 1
      */
     Student(final String studentName1, final String dateOfBirth,
-                   final int marks11, final int marks21, final int marks31, final int totmarksarks1,
+                   final int marks11, final int marks21,
+                   final int marks31, final int totmarksarks1,
                    final String rc1) {
         this.studentName = studentName1;
 

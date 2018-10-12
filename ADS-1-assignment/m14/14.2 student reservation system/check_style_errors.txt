@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:136:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:241: Line is longer than 80 characters (found 100). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
