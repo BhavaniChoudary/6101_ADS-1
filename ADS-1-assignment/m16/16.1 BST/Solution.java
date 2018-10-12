@@ -3,20 +3,51 @@ import java.util.Scanner;
  * Class for book.
  */
 class Book {
+    /**
+     * name.
+     */
     private String name;
+    /**
+     * author.
+     */
     private String author;
+    /**
+     * price.
+     */
     private Double price;
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     * @param      a     { parameter_description }
+     * @param      p     { parameter_description }
+     */
     Book(final String n, final String a, final Double p) {
         this.name = n;
         this.author = a;
         this.price = p;
     }
+    /**
+     * get name.
+     *
+     * @return     { description_of_the_return_value }
+     */
     String getname() {
         return this.name;
     }
+    /**
+     * get suthor.
+     *
+     * @return     { description_of_the_return_value }
+     */
     String getauthor() {
         return this.author;
     }
+    /**
+     * get price.
+     *
+     * @return     { description_of_the_return_value }
+     */
     Double getprice() {
         return this.price;
     }
@@ -49,7 +80,10 @@ class Book {
         }
     }
 }
-class BinarySearchTree {
+/**
+ * Class for binary search tree.
+ */
+class BST {
     class Node {
         private Book key;
         private Integer value;
@@ -63,7 +97,7 @@ class BinarySearchTree {
         }
     }
     private Node root;
-    BinarySearchTree() {
+    BST() {
         root = null;
     }
     public void put(final Book key, final Integer value) {
@@ -106,7 +140,7 @@ final class Solution {
     }
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        BinarySearchTree bst = new BinarySearchTree();
+        BST bst = new BST();
         while (sc.hasNextLine()) {
             String[] tokens = sc.nextLine().split(",");
             switch (tokens[0]) {
