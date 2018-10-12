@@ -6,60 +6,60 @@ import java.util.Scanner;
  * @param      <Value>  The value
  */
 class SymbolTable<Key extends Comparable<Key>, Value> {
-	/**
-	 * array for keys.
-	 */
-	private Key[] keys;
-	/**
-	 * array for values.
-	 */
-	private Value[] values;
-	/**
-	 * var size description.
-	 */
-	private int size;
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      n     { parameter_description }
-	 */
-	SymbolTable(final int n) {
-		keys = (Key[]) new Comparable[n];
-		values = (Value[]) new Object[n];
-		size = 0;
-	}
-	/**
-	 * inserts key and a value in the arrays. 
-	 *
-	 * @param      key    The key
-	 * @param      value  The value
-	 */
-	void put(final Key key, final Value value) {
-		if (value == null) {
-			delete(key);
-			return;
-		}
-		int i = rank(key);
-		if(i < size && keys[i].compareTo(key) == 0) {
-			values[i] = value;
-			return;
-		}
-		for (int j = size; j > i; j--) {
+    /**
+     * array for keys.
+     */
+    private Key[] keys;
+    /**
+     * array for values.
+     */
+    private Value[] values;
+    /**
+     * var size description.
+     */
+    private int size;
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     */
+    SymbolTable(final int n) {
+        keys = (Key[]) new Comparable[n];
+        values = (Value[]) new Object[n];
+        size = 0;
+    }
+    /**
+     * inserts key and a value in the arrays.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     */
+    void put(final Key key, final Value value) {
+        if (value == null) {
+            delete(key);
+            return;
+        }
+        int i = rank(key);
+        if (i < size && keys[i].compareTo(key) == 0) {
+            values[i] = value;
+            return;
+        }
+        for (int j = size; j > i; j--) {
             keys[j] = keys[j - 1];
             values[j] = values[j - 1];
         }
         keys[i] = key;
         values[i] = value;
         size++;
-	}
-	/**
-	 * shows if key is in symboltable.
-	 *
-	 * @param      key   The key
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	boolean contains(final Key key) {
+    }
+    /**
+     * shows if key is in symboltable.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    boolean contains(final Key key) {
         return get(key) != null;
     }
     /**
@@ -169,10 +169,10 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
  * Solution class.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
     }
     /**
      * Main function_description.
@@ -217,3 +217,4 @@ final class Solution {
         }
     }
 }
+
