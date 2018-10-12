@@ -1,12 +1,15 @@
 import java.util.Scanner;
+/**
+ * Class for book.
+ */
 class Book {
     private String name;
     private String author;
     private Double price;
     Book(final String n, final String a, final Double p) {
-        this.name = name;
-        this.author = author;
-        this.price = price;
+        this.name = n;
+        this.author = a;
+        this.price = p;
     }
     String getname() {
         return this.name;
@@ -17,6 +20,13 @@ class Book {
     Double getprice() {
         return this.price;
     }
+    /**
+     * compare.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
     int compareTo(final Book that) {
         if (this.name.compareTo(that.name) > 0) {
             return 1;
@@ -41,10 +51,10 @@ class Book {
 }
 class BinarySearchTree {
     class Node {
-    	private Book key;
+        private Book key;
         private Integer value;
         private Node left;
-        private Node right;
+        private Node right;        
         Node(final Book k, final Integer v) {
             this.key = k;
             this.value = v;
@@ -90,7 +100,9 @@ class BinarySearchTree {
     }
 }
 final class Solution {
+
     private Solution() {
+        //function.
     }
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
