@@ -194,18 +194,49 @@ class Student implements Comparable<Student> {
     public void setdob(final Date b) {
         this.dob = b;
     }
+    /**
+     * Gets the category.
+     *
+     * @return     The reservation category.
+     */
     public String getRc() {
         return rc;
     }
+    /**
+     * Sets the category.
+     *
+     * @param      r     { parameter_description }
+     */
     public void setRc(final String r) {
         this.rc = r;
     }
+    /**
+     * get total marks function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int gettotmarks() {
         return totmarks;
     }
+    /**
+     * set total marks function_description.
+     *
+     * @param      m     { parameter_description }
+     */
     public void settotmarks(final int m) {
         this.totmarks = m;
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      studentName1   The student name 1
+     * @param      dateOfBirth    The date of birth
+     * @param      marks11        The marks 11
+     * @param      marks21        The marks 21
+     * @param      marks31        The marks 31
+     * @param      totmarksarks1  The totmarksarks 1
+     * @param      rc1            The rectangle 1
+     */
     Student(final String studentName1, final String dateOfBirth,
                    final int marks11, final int marks21, final int marks31, final int totmarksarks1,
                    final String rc1) {
@@ -224,12 +255,27 @@ class Student implements Comparable<Student> {
         this.rc = rc1;
         this.alloted = false;
     }
+    /**
+     * get marks3 function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int getotmarksarks3() {
         return marks3;
     }
+    /**
+     * set marks3 function_description.
+     *
+     * @param      m     { parameter_description }
+     */
     public void setotmarksarks3(final int m) {
         this.marks3 = m;
     }
+    /**
+     * function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int getotmarksarks2() {
         return marks2;
     }
