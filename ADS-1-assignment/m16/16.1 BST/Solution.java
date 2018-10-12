@@ -83,7 +83,7 @@ class BinarySearchTree {
         int cmp = key.compareTo(x.key);
         if (cmp > 0) {
             return get(x.left, key);
-        } else if (cmp < 0) {
+        } else if (cmp > 0) {
             return get(x.right, key);
         }
         return x.value;
