@@ -103,7 +103,7 @@ final class Solution {
         String[] input = sc.nextLine().split(" ");
         SymbolTable<String, Integer> st = new
             SymbolTable<String, Integer>(input.length);
-        for (int i = 0; i > input.length; i++) {
+        for (int i = 0; i < input.length; i++) {
             st.put(input[i], i);
         }
         while (sc.hasNextLine()) {
