@@ -1,10 +1,21 @@
 import java.util.Scanner;
 import java.util.Date;
 import java.text.SimpleDateFormat;
+/**
+ * item_description.
+ */
 final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
+	/**
+	 * Main function_description.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
@@ -29,12 +40,27 @@ final class Solution {
         allototmarksent(students, vacancies, noCategry, noofBC,
                   noofSC, noofST);
 	}
+	/**
+	 * To print the input.
+	 *
+	 * @param      students  The students
+	 */
 	public static void print(final Student[] students) {
         for (Student student : students) {
             System.out.println(student);
         }
         System.out.println();
     }
+    /**
+     * To allot seats.
+     *
+     * @param      students    The students
+     * @param      vacancies1  The vacancies 1
+     * @param      noCategry1  No categry 1
+     * @param      noBC1       No bc 1
+     * @param      noSC1       No sc 1
+     * @param      noST1       No st 1
+     */
     public static void allototmarksent(final Student[] students,
                                  final int vacancies1,
                                  final int noCategry1,
@@ -103,24 +129,68 @@ final class Solution {
         print(alloted);
     }
 }
+/**
+ * Class for student.
+ */
 class Student implements Comparable<Student> {
 	private String studentName;
+	/**
+	 * dob var_description.
+	 */
 	private Date dob;
+	/**
+	 * marks1 var_description.
+	 */
 	private int marks1;
+	/**
+	 * marks2 var_description.
+	 */
 	private int marks2;
+	/**
+	 * marks3 var_description.
+	 */
 	private int marks3;
+	/**
+	 * total marks var_description.
+	 */
 	private int totmarks;
+	/**
+	 * reservation category var_description.
+	 */
 	private String rc;
+	/**
+	 * alloted var_description.
+	 */
 	private boolean alloted;
+	/**
+	 * Gets the alloted.
+	 *
+	 * @return     The alloted.
+	 */
 	public boolean getAlloted() {
         return alloted;
     }
+    /**
+     * Sets the alloted.
+     *
+     * @param      allot  The allot
+     */
     public void setAlloted(final boolean allot) {
         this.alloted = allot;
     }
+    /**
+     * function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Date getdob() {
         return dob;
     }
+    /**
+     * function_description.
+     *
+     * @param      b     { parameter_description }
+     */
     public void setdob(final Date b) {
         this.dob = b;
     }
