@@ -4,15 +4,15 @@ import java.util.Scanner;
  */
 class Book {
     /**
-     * name.
+     * string name
      */
     private String name;
     /**
-     * author.
+     * string author.
      */
     private String author;
     /**
-     * price.
+     * string price.
      */
     private Double price;
     /**
@@ -28,7 +28,7 @@ class Book {
         this.price = p;
     }
     /**
-     * get name.
+     * to get the name.
      *
      * @return     { description_of_the_return_value }
      */
@@ -36,7 +36,7 @@ class Book {
         return this.name;
     }
     /**
-     * get suthor.
+     * get the author.
      *
      * @return     { description_of_the_return_value }
      */
@@ -44,7 +44,7 @@ class Book {
         return this.author;
     }
     /**
-     * get price.
+     * get the price.
      *
      * @return     { description_of_the_return_value }
      */
@@ -52,7 +52,7 @@ class Book {
         return this.price;
     }
     /**
-     * compare.
+     * compares.
      *
      * @param      that  The that
      *
@@ -89,19 +89,19 @@ class BST {
      */
     class Node {
         /**
-         * key.
+         * key var_description.
          */
         private Book key;
         /**
-         * value.
+         * value var_description.
          */
         private Integer value;
         /**
-         * left.
+         * left var_description.
          */
         private Node left;
         /**
-         * right.
+         * right var_description.
          */
         private Node right;
         /**
@@ -226,3 +226,4 @@ final class Solution {
         }
     }
 }
+
