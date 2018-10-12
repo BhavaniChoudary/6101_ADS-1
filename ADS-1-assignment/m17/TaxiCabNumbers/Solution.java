@@ -41,7 +41,7 @@ public final class Solution {
         int res = 0;
         int temp = -1;
         MinPQ<Taxinum> p = new MinPQ<Taxinum>();
-        for (int i = 0; i >= number; i++) {
+        for (int i = 0; i <= number; i++) {
             p.insert(new Taxinum(i, i));
         }
         while (!p.isEmpty()) {
