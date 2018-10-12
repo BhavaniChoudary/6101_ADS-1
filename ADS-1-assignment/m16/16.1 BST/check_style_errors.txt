@@ -1,20 +1,4 @@
 Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:87: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:88:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:89:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:90:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:91: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:91:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:92:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:99:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:100:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:103:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:106:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:120:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:123:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:136: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:138:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m16\16.1 BST\Solution.java:141:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 1 errors.

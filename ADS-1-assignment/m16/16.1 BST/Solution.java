@@ -84,11 +84,32 @@ class Book {
  * Class for binary search tree.
  */
 class BST {
+    /**
+     * Class for node.
+     */
     class Node {
+        /**
+         * key.
+         */
         private Book key;
+        /**
+         * value.
+         */
         private Integer value;
+        /**
+         * left.
+         */
         private Node left;
-        private Node right;        
+        /**
+         * right.
+         */
+        private Node right;
+        /**
+         * Constructs the object.
+         *
+         * @param      k     { parameter_description }
+         * @param      v     { parameter_description }
+         */
         Node(final Book k, final Integer v) {
             this.key = k;
             this.value = v;
@@ -96,13 +117,34 @@ class BST {
             this.right = null;
         }
     }
+    /**
+     * root.
+     */
     private Node root;
+    /**
+     * Constructs the object.
+     */
     BST() {
         root = null;
     }
+    /**
+     * put.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     */
     public void put(final Book key, final Integer value) {
         root = put(root, key, value);
     }
+    /**
+     * put.
+     *
+     * @param      x      { parameter_description }
+     * @param      key    The key
+     * @param      value  The value
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node put(final Node x, final Book key, final Integer value) {
         if (x == null) {
             return new Node(key, value);
@@ -117,9 +159,24 @@ class BST {
         }
         return x;
     }
+    /**
+     * get.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Integer get(final Book key) {
         return get(root, key);
     }
+    /**
+     * get.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Integer get(final Node x, final Book key) {
         if (x == null) {
             return null;
@@ -133,11 +190,21 @@ class BST {
         return x.value;
     }
 }
+/**
+ * solution.
+ */
 final class Solution {
-
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //function.
     }
+    /**
+     * main.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BST bst = new BST();
