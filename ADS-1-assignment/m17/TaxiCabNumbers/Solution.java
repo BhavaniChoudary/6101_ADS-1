@@ -4,13 +4,13 @@ import java.util.Scanner;
  */
 class Taxinum implements Comparable<Taxinum> {
     /**
-     * integer number1 var_description.
+     * integer num11 var_description.
      */
-    private int number1;
+    private int num11;
     /**
-     * integer number2 var_description.
+     * integer num22 var_description.
      */
-    private int number2;
+    private int num22;
     /**
      * integer sum var_description.
      */
@@ -18,13 +18,13 @@ class Taxinum implements Comparable<Taxinum> {
     /**
      * Constructs the object.
      *
-     * @param      number1  The number 1
-     * @param      number2  The number 2
+     * @param      num11  The number 1
+     * @param      num22  The number 2
      */
-    Taxinum(final int number1, final int number2) {
-        this.sum = number1 * number1 * number1 + number2 * number2 * number2;
-        this.number1 = number1;
-        this.number2 = number2;
+    Taxinum(final int num11, final int num22) {
+        this.sum = num11 * num11 * num11 + num22 * num22 * num22;
+        this.num11 = num11;
+        this.num22 = num22;
     }
     /**
      * get method for num1.
@@ -32,8 +32,8 @@ class Taxinum implements Comparable<Taxinum> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int getnumber1() {
-        return this.number1;
+    public int getnum11() {
+        return this.num11;
     }
     /**
      * get method for num2.
@@ -42,8 +42,8 @@ class Taxinum implements Comparable<Taxinum> {
      * @return     { description_of_the_return_value }
      */
 
-    public int getnumber2() {
-        return this.number2;
+    public int getnum22() {
+        return this.num22;
     }
     /**
      * get sum.
@@ -78,7 +78,7 @@ class Taxinum implements Comparable<Taxinum> {
      * @return     String representation of the object.
      */
     public String toString() {
-        return sum + " = " + number1 + "^3" + " + " + number2 + "^3";
+        return sum + " = " + num11 + "^3" + " + " + num22 + "^3";
     }
 }
 /**
@@ -123,8 +123,8 @@ public final class Solution {
                 }
             }
             temp = sn.getsum();
-            if (sn.getnumber2() < number) {
-                p.insert(new Taxinum(sn.getnumber1(), sn.getnumber2() + 1));
+            if (sn.getnum22() < number) {
+                p.insert(new Taxinum(sn.getnum11(), sn.getnum22() + 1));
             }
         }
     }
