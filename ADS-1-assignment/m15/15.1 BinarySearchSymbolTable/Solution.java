@@ -1,5 +1,14 @@
 import java.util.Scanner;
+/**
+ * Class for symbol table.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class SymbolTable<Key extends Comparable<Key>, Value> {
+	/**
+	 * array for keys.
+	 */
 	private Key[] keys;
 	private Value[] values;
 	private int size;
