@@ -15,8 +15,9 @@ S 0
 X 7
 null
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at SymbolTable.max(Solution.java:58)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -36,8 +37,9 @@ O
 false
 null
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at SymbolTable.max(Solution.java:58)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -62,8 +64,9 @@ true
 5
 T
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at SymbolTable.max(Solution.java:58)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -86,8 +89,9 @@ true
 13
 P
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at SymbolTable.max(Solution.java:58)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -105,6 +109,9 @@ S 0
 T 6
 Y 1
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+null
+null
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at SymbolTable.max(Solution.java:58)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
