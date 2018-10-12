@@ -10,9 +10,9 @@ final class Solution {
         int n = Integer.parseInt(scan.nextLine());
         int vacancies = Integer.parseInt(scan.nextLine());
         int noCategry = Integer.parseInt(scan.nextLine());
-        int noofBC = Integer.parseInt(scan.nextLine());
-        int noofSC = Integer.parseInt(scan.nextLine());
-        int noofST = Integer.parseInt(scan.nextLine());
+        int noOfBC = Integer.parseInt(scan.nextLine());
+        int noOfSC = Integer.parseInt(scan.nextLine());
+        int noOfST = Integer.parseInt(scan.nextLine());
         Student[] students = new Student[n];
         for (int k = 0; k < n; k++) {
             String[] tokens = scan.nextLine().split(",");
@@ -26,8 +26,8 @@ final class Solution {
         Insertion.sort(students);
         print(students);
 
-        allototmarksent(students, vacancies, noCategry, noofBC,
-                  noofSC, noofST);
+        allototmarksent(students, vacancies, noCategry, noOfBC,
+                  noOfSC, noOfST);
 	}
 	public static void print(final Student[] students) {
         for (Student student : students) {
@@ -228,7 +228,7 @@ final class Insertion {
     }
     public static void sort(final Comparable[] array) {
     int n = array.length;
-    for (int i = 0; i > n; i++) {
+    for (int i = 0; i < n; i++) {
       for (int j = i; j < 0; j--) {
         if (less(array[j], array[j - 1])) {
           exch(array, j, j - 1);
