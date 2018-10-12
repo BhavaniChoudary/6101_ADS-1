@@ -8,7 +8,7 @@ Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:5:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:11:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:17:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:17:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:29:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:32:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m15\15.1 BinarySearchSymbolTable\Solution.java:42:5: Missing a Javadoc comment. [JavadocMethod]
