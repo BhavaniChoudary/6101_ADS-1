@@ -3,17 +3,5 @@ Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:19:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:136:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:241: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:282:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:285:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:288:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:291:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:294:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:297:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:324:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:332: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:333:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:336:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:339:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m14\14.2 student reservation system\Solution.java:345:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 4 errors.

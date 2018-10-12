@@ -272,28 +272,60 @@ class Student implements Comparable<Student> {
         this.marks3 = m;
     }
     /**
-     * function_description.
+     * get marks2 function_description.
      *
      * @return     { description_of_the_return_value }
      */
     public int getotmarksarks2() {
         return marks2;
     }
+    /**
+     * set marks2 function_description.
+     *
+     * @param      m     { parameter_description }
+     */
     public void setotmarksarks2(final int m) {
         this.marks2 = m;
     }
+    /**
+     * get marks1 function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int getotmarksarks1() {
         return marks1;
     }
+    /**
+     * set marks1 function_description.
+     *
+     * @param      m     { parameter_description }
+     */
     public void setotmarksarks1(final int m) {
         this.marks1 = m;
     }
+    /**
+     * Gets the student name.
+     *
+     * @return     The student name.
+     */
     public String getStudentName() {
         return studentName;
     }
+    /**
+     * Sets the student name.
+     *
+     * @param      student  The student
+     */
     public void setStudentName(final String student) {
         this.studentName = student;
     }
+    /**
+     * compareTofunction_description.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int compareTo(final Student that) {
         if (this.gettotmarks() > that.gettotmarks()) {
             return -1;
@@ -321,6 +353,11 @@ class Student implements Comparable<Student> {
         }
         return 0;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuffer sb = new StringBuffer();
         sb.append(this.getStudentName() + ",");
@@ -329,19 +366,45 @@ class Student implements Comparable<Student> {
         return sb.toString();
     }
 }
+/**
+ * item_description.
+ */
 final class Insertion {
+	/**
+	 * Constructs the object.
+	 */
 	private Insertion() {
 
 	}
+	/**
+	 * less function_description.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private static boolean less(final Comparable v, final Comparable w) {
 		return v.compareTo(w) < 0;
 	}
+	/**
+	 * function_description.
+	 *
+	 * @param      array      The array
+	 * @param      itemarks1  The itemarks 1
+	 * @param      itemarks2  The itemarks 2
+	 */
 	private static void exch(final Comparable[] array,
     final int itemarks1, final int itemarks2) {
     Comparable swap = array[itemarks1];
     array[itemarks1] = array[itemarks2];
     array[itemarks2] = swap;
     }
+    /**
+     * sorting function_description.
+     *
+     * @param      array  The array
+     */
     public static void sort(final Comparable[] array) {
     int n = array.length;
     for (int i = 0; i < n; i++) {
