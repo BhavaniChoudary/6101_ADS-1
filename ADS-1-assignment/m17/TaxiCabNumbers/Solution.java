@@ -4,13 +4,13 @@ import java.util.Scanner;
  */
 class Taxinum implements Comparable<Taxinum> {
     /**
-     * Integer num1.
+     * Integer number1.
      */
-    private int num1;
+    private int number1;
     /**
-     * Integer num2.
+     * Integer number2.
      */
-    private int num2;
+    private int number2;
 
     /**
      * Integer sum.
@@ -20,34 +20,34 @@ class Taxinum implements Comparable<Taxinum> {
      * Constructs the object.
      * Time complexity is 1.
      *
-     * @param      num11  The number 1
-     * @param      num22  The number 2
+     * @param      number11  The number 1
+     * @param      number22  The number 2
      */
-    Taxinum(final int num11, final int num22) {
-        this.sum = num11 * num11 * num11 + num22 * num22 * num22;
-        this.num1 = num11;
-        this.num2 = num22;
+    Taxinum(final int number11, final int number22) {
+        this.sum = number11 * number11 * number11 + number22 * number22 * number22;
+        this.number1 = number11;
+        this.number2 = number22;
     }
     /**
-     * get method for num1.
+     * get method for number1.
      * Time complexity is 1.
      *
      * @return     { description_of_the_return_value }
      */
-    public int getnum1() {
-        return this.num1;
+    public int getnumber1() {
+        return this.number1;
     }
     /**
-     * get method for num2.
+     * get method for number2.
      * Time complexity is 1.
      *
      * @return     { description_of_the_return_value }
      */
-    public int getnum2() {
-        return this.num2;
+    public int getnumber2() {
+        return this.number2;
     }
     /**
-     * getsum.
+     * get method for sum.
      * Time complexity is 1.
      *
      * @return     { description_of_the_return_value }
@@ -78,7 +78,7 @@ class Taxinum implements Comparable<Taxinum> {
      * @return     String representation of the object.
      */
     public String toString() {
-        return sum + " = " + num1 + "^3" + " + " + num2 + "^3";
+        return sum + " = " + number1 + "^3" + " + " + number2 + "^3";
     }
 }
 /**
@@ -93,7 +93,7 @@ public final class Solution {
         // constructor not used.
     }
     /**
-     * Client program.
+     * Main function description
      *
      * @param      args  The arguments
      */
@@ -123,8 +123,8 @@ public final class Solution {
                 }
             }
             temp = sn.getsum();
-            if (sn.getnum2() < num) {
-                p.insert(new Taxinum(sn.getnum1(), sn.getnum2() + 1));
+            if (sn.getnumber2() < num) {
+                p.insert(new Taxinum(sn.getnumber1(), sn.getnumber2() + 1));
             }
         }
     }

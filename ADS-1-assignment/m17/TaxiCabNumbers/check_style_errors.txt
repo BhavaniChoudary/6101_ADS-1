@@ -1,4 +1,5 @@
 Starting audit...
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:27: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:95: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.
