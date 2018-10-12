@@ -4,7 +4,7 @@ import java.util.Scanner;
  */
 class Book {
     /**
-     * string name
+     * string name.
      */
     private String name;
     /**
