@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:24:27: 'number1' hides a field. [HiddenField]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:24:46: 'number2' hides a field. [HiddenField]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:100:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:24:23: 'number1' hides a field. [HiddenField]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m17\TaxiCabNumbers\Solution.java:24:42: 'number2' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
