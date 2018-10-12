@@ -5,19 +5,19 @@ import java.text.SimpleDateFormat;
  * item_description.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	/**
-	 * Main function_description.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+    }
+    /**
+     * Main function_description.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         int vacancies = Integer.parseInt(scan.nextLine());
         int noCategry = Integer.parseInt(scan.nextLine());
@@ -39,13 +39,13 @@ final class Solution {
 
         allototmarksent(students, vacancies, noCategry, noofBC,
                   noofSC, noofST);
-	}
-	/**
-	 * To print the input.
-	 *
-	 * @param      students  The students
-	 */
-	public static void print(final Student[] students) {
+    }
+    /**
+     * To print the input.
+     *
+     * @param      students  The students
+     */
+    public static void print(final Student[] students) {
         for (Student student : students) {
             System.out.println(student);
         }
@@ -133,41 +133,41 @@ final class Solution {
  * Class for student.
  */
 class Student implements Comparable<Student> {
-	private String studentName;
-	/**
-	 * dob var_description.
-	 */
-	private Date dob;
-	/**
-	 * marks1 var_description.
-	 */
-	private int marks1;
-	/**
-	 * marks2 var_description.
-	 */
-	private int marks2;
-	/**
-	 * marks3 var_description.
-	 */
-	private int marks3;
-	/**
-	 * total marks var_description.
-	 */
-	private int totmarks;
-	/**
-	 * reservation category var_description.
-	 */
-	private String rc;
-	/**
-	 * alloted var_description.
-	 */
-	private boolean alloted;
-	/**
-	 * Gets the alloted.
-	 *
-	 * @return     The alloted.
-	 */
-	public boolean getAlloted() {
+    private String studentName;
+    /**
+     * dob var_description.
+     */
+    private Date dob;
+    /**
+     * marks1 var_description.
+     */
+    private int marks1;
+    /**
+     * marks2 var_description.
+     */
+    private int marks2;
+    /**
+     * marks3 var_description.
+     */
+    private int marks3;
+    /**
+     * total marks var_description.
+     */
+    private int totmarks;
+    /**
+     * reservation category var_description.
+     */
+    private String rc;
+    /**
+     * alloted var_description.
+     */
+    private boolean alloted;
+    /**
+     * Gets the alloted.
+     *
+     * @return     The alloted.
+     */
+    public boolean getAlloted() {
         return alloted;
     }
     /**
@@ -370,31 +370,31 @@ class Student implements Comparable<Student> {
  * item_description.
  */
 final class Insertion {
-	/**
-	 * Constructs the object.
-	 */
-	private Insertion() {
+    /**
+     * Constructs the object.
+     */
+    private Insertion() {
 
-	}
-	/**
-	 * less function_description.
-	 *
-	 * @param      v     { parameter_description }
-	 * @param      w     { parameter_description }
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	private static boolean less(final Comparable v, final Comparable w) {
-		return v.compareTo(w) < 0;
-	}
-	/**
-	 * function_description.
-	 *
-	 * @param      array      The array
-	 * @param      itemarks1  The itemarks 1
-	 * @param      itemarks2  The itemarks 2
-	 */
-	private static void exch(final Comparable[] array,
+    }
+    /**
+     * less function_description.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private static boolean less(final Comparable v, final Comparable w) {
+        return v.compareTo(w) < 0;
+    }
+    /**
+     * function_description.
+     *
+     * @param      array      The array
+     * @param      itemarks1  The itemarks 1
+     * @param      itemarks2  The itemarks 2
+     */
+    private static void exch(final Comparable[] array,
     final int itemarks1, final int itemarks2) {
     Comparable swap = array[itemarks1];
     array[itemarks1] = array[itemarks2];
@@ -418,3 +418,6 @@ final class Insertion {
     }
   }
 }
+
+
+
