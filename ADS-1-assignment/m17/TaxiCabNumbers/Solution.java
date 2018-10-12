@@ -1,30 +1,32 @@
 import java.util.Scanner;
 /**
- * Class for taxi number.
+ * Class for Taxinum.
  */
 class Taxinum implements Comparable<Taxinum> {
     /**
-     * integer num11 var_description.
+     * Integer num1.
      */
-    private int num11;
+    private int num1;
     /**
-     * integer num22 var_description.
+     * Integer num2.
      */
-    private int num22;
+    private int num2;
+
     /**
-     * integer sum var_description.
+     * Integer sum.
      */
     private int sum;
     /**
      * Constructs the object.
+     * Time complexity is 1.
      *
      * @param      num11  The number 1
      * @param      num22  The number 2
      */
     Taxinum(final int num11, final int num22) {
         this.sum = num11 * num11 * num11 + num22 * num22 * num22;
-        this.num11 = num11;
-        this.num22 = num22;
+        this.num1 = num11;
+        this.num2 = num22;
     }
     /**
      * get method for num1.
@@ -32,8 +34,8 @@ class Taxinum implements Comparable<Taxinum> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int getnum11() {
-        return this.num11;
+    public int getnum1() {
+        return this.num1;
     }
     /**
      * get method for num2.
@@ -41,22 +43,20 @@ class Taxinum implements Comparable<Taxinum> {
      *
      * @return     { description_of_the_return_value }
      */
-
-    public int getnum22() {
-        return this.num22;
+    public int getnum2() {
+        return this.num2;
     }
     /**
-     * get sum.
+     * getsum.
      * Time complexity is 1.
      *
      * @return     { description_of_the_return_value }
      */
-
     public int getsum() {
         return this.sum;
     }
     /**
-     * compares.
+     * compareTo.
      * Time complexity is 1.
      *
      * @param      t     { parameter_description }
@@ -78,7 +78,7 @@ class Taxinum implements Comparable<Taxinum> {
      * @return     String representation of the object.
      */
     public String toString() {
-        return sum + " = " + num11 + "^3" + " + " + num22 + "^3";
+        return sum + " = " + num1 + "^3" + " + " + num2 + "^3";
     }
 }
 /**
@@ -90,22 +90,22 @@ public final class Solution {
      * Time complexity is 1.
      */
     private Solution() {
-        //constructor not used.
+        // constructor not used.
     }
     /**
-     * Main function.
+     * Client program.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        final int number = 600;
+        final int num = 600;
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int m = s.nextInt();
         int res = 0;
         int temp = -1;
         MinPQ<Taxinum> p = new MinPQ<Taxinum>();
-        for (int i = 0; i <= number; i++) {
+        for (int i = 0; i <= num; i++) {
             p.insert(new Taxinum(i, i));
         }
         while (!p.isEmpty()) {
@@ -123,8 +123,8 @@ public final class Solution {
                 }
             }
             temp = sn.getsum();
-            if (sn.getnum22() < number) {
-                p.insert(new Taxinum(sn.getnum11(), sn.getnum22() + 1));
+            if (sn.getnum2() < num) {
+                p.insert(new Taxinum(sn.getnum1(), sn.getnum2() + 1));
             }
         }
     }
