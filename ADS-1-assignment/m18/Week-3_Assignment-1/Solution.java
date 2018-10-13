@@ -42,6 +42,9 @@ class Stock {
  * Class for addstock.
  */
 class addstock {
+    /**
+     * stack array.
+     */
     Stock[] stack;
     int size;
     /**
@@ -49,8 +52,8 @@ class addstock {
      *
      * @param      n     { parameter_description }
      */
-    addstock(int n) {
-        stack = new Stock[n*6];
+    addstock(final int n) {
+        stack = new Stock[n * 6];
         size = 0;
     }
     /**
@@ -58,7 +61,7 @@ class addstock {
      *
      * @param      s     { parameter_description }
      */
-    public void add(Stock s) {
+    public void add(final Stock s) {
         stack[size++] = s;
     }
 }
@@ -66,7 +69,14 @@ class addstock {
  * Class for sorting.
  */
 class sorting {
-    public void sort(Stock[] st, int low, int high) {
+    /**
+     * sort function_description.
+     *
+     * @param      st    { parameter_description }
+     * @param      low   The low
+     * @param      high  The high
+     */
+    public void sort(final Stock[] st, final int low, final int high) {
         for (int i = low; i < high; i++) {
             for (int j = i; j < high; j++) {
                 if (st[i].getchange() < st[j].getchange())  {
