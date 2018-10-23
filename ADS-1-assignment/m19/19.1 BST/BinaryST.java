@@ -1,4 +1,7 @@
 import java.util.NoSuchElementException;
+/**
+ * Class for book.
+ */
 class Book {
 	private String name;
 	private String author;
