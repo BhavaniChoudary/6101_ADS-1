@@ -129,7 +129,7 @@ public class BinaryST {
 		root = null;
 	}
 	/**
-	 * Determines if empty.
+	 * Determinimumes if empty.
 	 *
 	 * @return     True if empty, False otherwise.
 	 */
@@ -236,20 +236,37 @@ public class BinaryST {
         }
         return x.value;
     }
-    public Book min() {
+    /**
+     * minimum function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Book minimum() {
         if (isEmpty()) {
             throw new NoSuchElementException(
-                "calls min() with empty symbol table");
+                "calls minimum() with empty symbol table");
         }
-        return min(root).key;
+        return minimum(root).key;
     }
-    private Node min(final Node x) {
+    /**
+     * function_description.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node minimum(final Node x) {
         if (x.left == null) {
             return x;
         } else {
-            return min(x.left);
+            return minimum(x.left);
         }
     }
+    /**
+     * max function_description.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Book max() {
         if (isEmpty()) {
             throw new NoSuchElementException(

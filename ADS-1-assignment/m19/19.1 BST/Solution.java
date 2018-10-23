@@ -32,8 +32,8 @@ final class Solution {
             case "max":
                 System.out.println(bst.max());
                 break;
-            case "min":
-                System.out.println(bst.min());
+            case "minimum":
+                System.out.println(bst.minimum());
                 break;
             case "floor":
                 System.out.println(bst.floor(new Book(tokens[1],
