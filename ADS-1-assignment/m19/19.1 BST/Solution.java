@@ -3,17 +3,17 @@ import java.util.Scanner;
  * Solution class.
  */
 final class Solution {
-    /**
-     * Constructs the object.
-     */
-    private Solution() {
-        //function.
-    }
-    /**
-     * Main function_description.
-     *
-     * @param      args  The arguments
-     */
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//function.
+	}
+	/**
+	 * Main function_description.
+	 *
+	 * @param      args  The arguments
+	 */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinaryST bst = new BinaryST();
@@ -32,8 +32,8 @@ final class Solution {
             case "max":
                 System.out.println(bst.max());
                 break;
-            case "minimum":
-                System.out.println(bst.minimum());
+            case "min":
+                System.out.println(bst.min());
                 break;
             case "floor":
                 System.out.println(bst.floor(new Book(tokens[1],
