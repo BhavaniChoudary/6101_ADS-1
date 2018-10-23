@@ -280,6 +280,16 @@ public class BinaryST {
         }
         return max(root).key;
     }
+    /**
+     * max function_description.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node max(final Node x) {
         if (x.right == null) {
             return x;
@@ -287,6 +297,16 @@ public class BinaryST {
             return max(x.right);
         }
     }
+    /**
+     * floor.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Book floor(final Book key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to floor() is null");
@@ -302,6 +322,17 @@ public class BinaryST {
             return x.key;
         }
     }
+    /**
+     * floor.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node floor(final Node x, final Book key) {
         if (x == null) {
             return null;
@@ -320,6 +351,16 @@ public class BinaryST {
             return x;
         }
     }
+    /**
+     * ceiling function_description.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Book ceiling(final Book key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to ceiling() is null");
@@ -335,6 +376,17 @@ public class BinaryST {
             return x.key;
         }
     }
+    /**
+     * ceiling.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node ceiling(final Node x, final Book key) {
         if (x == null) {
             return null;
@@ -353,6 +405,16 @@ public class BinaryST {
         }
         return ceiling(x.right, key);
     }
+    /**
+     * select function_description.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Book select(final int k) {
         if (k < 0 || k >= size()) {
             throw new IllegalArgumentException(
@@ -361,6 +423,17 @@ public class BinaryST {
         Node x = select(root, k);
         return x.key;
     }
+    /**
+     * select.
+     *
+     * @param      x     { parameter_description }
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node select(final Node x, final int k) {
         if (x == null) {
             return null;
@@ -374,6 +447,16 @@ public class BinaryST {
             return x;
         }
     }
+    /**
+     * rank function_description.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public int rank(final Book key) {
         if (key == null) {
             throw new IllegalArgumentException(
@@ -381,6 +464,17 @@ public class BinaryST {
         }
         return rank(key, root);
     }
+    /**
+     * No.of keys in the subtree less than key.
+     *
+     * @param      key   The key
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private int rank(final Book key, final Node x) {
         if (x == null) {
             return 0;
