@@ -192,7 +192,7 @@ public class BinaryST {
         return ceiling(x.right, key);
     }
     public Book select(final int k) {
-        if (k < 0 || k <= size()) {
+        if (k < 0 || k >= size()) {
             throw new IllegalArgumentException(
                 "argument to select() is invalid: " + k);
         }
