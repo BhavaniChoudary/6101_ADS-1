@@ -99,7 +99,17 @@ public class BinaryST {
 		 * right.
 		 */
 		private Node right;
+		/**
+		 * size.
+		 */
 		private int size;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      k      { parameter_description }
+		 * @param      v      { parameter_description }
+		 * @param      size1  The size 1
+		 */
 		Node(final Book k, final Integer v, final int size1) {
             this.key = k;
             this.value = v;
@@ -108,16 +118,42 @@ public class BinaryST {
             this.size = size1;
         }
 	}
+	/**
+	 * var_description.
+	 */
 	private Node root;
+	/**
+	 * Constructs the object.
+	 */
 	BinaryST() {
 		root = null;
 	}
+	/**
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	public boolean isEmpty() {
 		return size() == 0;
 	}
+	/**
+	 * size of tree.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int size() {
 		return size(root);
 	}
+	/**
+	 * size of subtree.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+	 */
 	private int size(final Node x) {
         if (x == null) {
             return 0;
@@ -125,9 +161,30 @@ public class BinaryST {
             return x.size;
         }
     }
+    /**
+     * put function_description.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public void put(final Book key, final Integer value) {
         root = put(root, key, value);
     }
+    /**
+     * function_description.
+     *
+     * @param      x      { parameter_description }
+     * @param      key    The key
+     * @param      value  The value
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node put(final Node x, final Book key, final Integer value) {
         if (x == null) {
             return new Node(key, value, 1);
@@ -143,9 +200,30 @@ public class BinaryST {
         x.size = 1 + size(x.left) + size(x.right);
         return x;
     }
+    /**
+     * get function_description.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Integer get(final Book key) {
         return get(root, key);
     }
+    /**
+     * get.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Integer get(final Node x, final Book key) {
         if (x == null) {
             return null;
