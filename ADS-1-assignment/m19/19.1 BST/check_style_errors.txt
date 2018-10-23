@@ -1,0 +1,9 @@
+Starting audit...
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m19\19.1 BST\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m19\19.1 BST\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m19\19.1 BST\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m19\19.1 BST\Solution.java:3:29: '{' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m19\19.1 BST\Solution.java:3:29: '}' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m19\19.1 BST\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 6 errors.
