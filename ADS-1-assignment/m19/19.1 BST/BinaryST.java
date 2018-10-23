@@ -83,9 +83,21 @@ class Book {
  */
 public class BinaryST {
 	class Node {
+		/**
+		 * key var_description.
+		 */
 		private Book key;
+		/**
+		 * value var_description.
+		 */
 		private Integer value;
+		/**
+		 * left.
+		 */
 		private Node left;
+		/**
+		 * right.
+		 */
 		private Node right;
 		private int size;
 		Node(final Book k, final Integer v, final int size1) {
@@ -255,7 +267,7 @@ public class BinaryST {
         int t = size(x.left);
         if (t > k) {
             return select(x.left,  k);
-        } else if (t > k) {
+        } else if (t < k) {
             return select(x.right, k - t - 1);
         } else {
             return x;
