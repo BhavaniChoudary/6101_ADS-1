@@ -249,11 +249,14 @@ public class BinaryST {
         return min(root).key;
     }
     /**
-     * function_description.
+     * min function_description.
      *
      * @param      x     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
      */
     private Node min(final Node x) {
         if (x.left == null) {
@@ -262,6 +265,14 @@ public class BinaryST {
             return min(x.left);
         }
     }
+    /**
+     * max function_description.
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Book max() {
         if (isEmpty()) {
             throw new NoSuchElementException(
