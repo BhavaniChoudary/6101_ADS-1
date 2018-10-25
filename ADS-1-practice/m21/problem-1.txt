@@ -1,0 +1,2 @@
+In the above given figures iii and iv are the red-black BSTs satisfying all it's properties whereas i and ii are not red-black BSTs because they don't have the equal number of black links from root
+to null.
