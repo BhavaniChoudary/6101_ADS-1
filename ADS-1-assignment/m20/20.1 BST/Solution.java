@@ -1,6 +1,19 @@
 import java.util.Scanner;
+/**
+ * class solution.
+ */
 final class Solution {
-    private Solution() {}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //function.
+    }
+    /**
+     * Main function_description.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc =  new Scanner(System.in);
         BinaryST bst = new BinaryST();
