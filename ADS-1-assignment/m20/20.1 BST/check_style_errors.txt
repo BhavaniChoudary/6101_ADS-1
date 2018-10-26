@@ -1,12 +1,5 @@
 Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:17:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:20:14: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:22:19: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:23: Line is longer than 80 characters (found 132). [LineLength]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:23:95: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:23:96: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:23:127: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:23:128: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:24: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 2 errors.
