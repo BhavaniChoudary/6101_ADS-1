@@ -32,28 +32,68 @@ class HashTable {
             this.val = v;
             this.next = n;
         }
+        /**
+         * get key.
+         *
+         * @return     { description_of_the_return_value }
+         */
         String getkey() {
             return this.key;
         }
+        /**
+         * Gets the value.
+         *
+         * @return     The value.
+         */
         Integer getValue() {
             return this.val;
         }
+        /**
+         * Sets the value.
+         *
+         * @param      v     { parameter_description }
+         */
         void setValue(final Integer v) {
             this.val = v;
         }
     }
+    /**
+     * Node array.
+     */
     private Node[] st;
+    /**
+     * sixe of the array.
+     */
     private int s = (2 * (2 + 2 + 1)) * (2 * (2 + 2 + 1));
+    /**
+     * Constructs the object.
+     */
     HashTable() {
         st = new Node[s];
     }
+    /**
+     * hash function_description.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     int hash(final String k) {
         final int con = 0x7fffffff;
         return (k.hashCode() & con) % s;
     }
+    /**
+     * resize the array.
+     */
     public void resize() {
         st = Arrays.copyOf(st, 2 * s);
     }
+    /**
+     * put.
+     *
+     * @param      k     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     public void put(final String k, final Integer v) {
         int i = hash(k);
         for (Node x = st[i]; x != null; x = x.next) {
@@ -67,6 +107,13 @@ class HashTable {
         }
         st[i] = new Node(k, v, st[i]);
     }
+    /**
+     * get.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean get(final String k) {
         int i = hash(k);
         for (Node x = st[i]; x != null; x = x.next) {
@@ -81,10 +128,21 @@ class HashTable {
         return false;
     }
 }
+/**
+ * class Solution.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //function.
     }
+    /**
+     * Main function_description.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
@@ -97,7 +155,7 @@ final class Solution {
             h.put(magazine[i], 1);
         }
         boolean flag = true;
-        for (int i = 0; i > n; i++) {
+        for (int i = 0; i < n; i++) {
             if (!h.get(note[i])) {
                 flag = false;
                 System.out.println("No");
