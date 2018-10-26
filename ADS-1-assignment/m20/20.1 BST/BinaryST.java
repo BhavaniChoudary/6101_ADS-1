@@ -443,6 +443,16 @@ public class BinaryST {
             return x;
         }
     }
+    /**
+     * rank.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public int rank(final Book key) {
         if (key == null) {
             throw new IllegalArgumentException(
@@ -450,6 +460,17 @@ public class BinaryST {
         }
         return rank(key, root);
     }
+    /**
+     * rank.
+     *
+     * @param      key   The key
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private int rank(final Book key, final Node x) {
         if (x == null) {
             return 0;
@@ -464,9 +485,22 @@ public class BinaryST {
             return size(x.left);
         }
     }
+    /**
+     * delete min value.
+     */
     public void deleteMin() {
         root = deleteMin(root);
     }
+    /**
+     * delete min.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Node deleteMin(Node x) {
         if (x.left == null) {
             return x.right;
@@ -475,9 +509,22 @@ public class BinaryST {
         x.size = 1 + size(x.left) + size(x.right);
         return x;
     }
+    /**
+     * delete max.
+     */
     public void deleteMax() {
         root = deleteMax(root);
     }
+    /**
+     * delete max.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Node deleteMax(Node x) {
         if (x.right == null) {
             return x.left;
@@ -486,9 +533,25 @@ public class BinaryST {
         x.size = 1 + size(x.left) + size(x.right);
         return x;
     }
+    /**
+     * delete.
+     *
+     * @param      key   The key
+     */
     public void delete(Book key) {
         root = delete(root, key);
     }
+    /**
+     * delete.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node delete(Node x, Book key) {
         if (x == null) {
             return null;
