@@ -372,6 +372,17 @@ public class BinaryST {
             return x.key;
         }
     }
+    /**
+     * ceiling.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node ceiling(final Node x, final Book key) {
         if (x == null) {
             return null;
@@ -390,6 +401,16 @@ public class BinaryST {
         }
         return ceiling(x.right, key);
     }
+    /**
+     * select.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Book select(final int k) {
         if (k < 0 || k >= size()) {
             throw new IllegalArgumentException(
@@ -398,12 +419,23 @@ public class BinaryST {
         Node x = select(root, k);
         return x.key;
     }
+    /**
+     * return key of rank k.
+     *
+     * @param      x     { parameter_description }
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node select(final Node x, final int k) {
         if (x == null) {
             return null;
         }
         int t = size(x.left);
-        if (t < k) {
+        if (t > k) {
             return select(x.left,  k);
         } else if (t < k) {
             return select(x.right, k - t - 1);
