@@ -4,15 +4,15 @@ import java.util.NoSuchElementException;
  */
 class Book {
     /**
-     * name.
+     * name var_description.
      */
     private String name;
     /**
-     * author.
+     * author var_description.
      */
     private String author;
     /**
-     * price.
+     * price var_description.
      */
     private Double price;
     /**
@@ -28,7 +28,7 @@ class Book {
         this.price = p;
     }
     /**
-     * get name.
+     * get name function_description.
      *
      * @return     { description_of_the_return_value }
      */
@@ -36,7 +36,7 @@ class Book {
         return this.name;
     }
     /**
-     * get suthor.
+     * get author function_description.
      *
      * @return     { description_of_the_return_value }
      */
@@ -44,7 +44,7 @@ class Book {
         return this.author;
     }
     /**
-     * get price.
+     * get price function_description.
      *
      * @return     { description_of_the_return_value }
      */
@@ -79,7 +79,7 @@ class Book {
     }
 }
 /**
- * Class for binary search tree.
+ * Class for binary Search Tree.
  */
 public class BinaryST {
     /**
@@ -87,31 +87,31 @@ public class BinaryST {
      */
     class Node {
         /**
-         * key.
+         * key var_description.
          */
         private Book key;
         /**
-         * value.
+         * value var_description.
          */
         private Integer value;
         /**
-         * left.
+         * left var_description.
          */
         private Node left;
         /**
-         * right.
+         * right var_description.
          */
         private Node right;
         /**
-         * size.
+         * size var_description.
          */
         private int size;
         /**
          * Constructs the object.
          *
-         * @param      k     { parameter_description }
-         * @param      v     { parameter_description }
-         * @param      size1  The size
+         * @param      k      { parameter_description }
+         * @param      v      { parameter_description }
+         * @param      size1  The size 1
          */
         Node(final Book k, final Integer v, final int size1) {
             this.key = k;
@@ -129,7 +129,7 @@ public class BinaryST {
      * Constructs the object.
      */
     BinaryST() {
-        root = null;
+        root =  null;
     }
     /**
      * Determines if empty.
@@ -140,7 +140,7 @@ public class BinaryST {
         return size() == 0;
     }
     /**
-     * size of tree.
+     * size function_description.
      *
      * @return     { description_of_the_return_value }
      */
@@ -150,9 +150,9 @@ public class BinaryST {
     /**
      * size of subtree.
      *
-     * @param      x     node.
+     * @param      x     { parameter_description }
      *
-     * @return     integer value.
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
@@ -182,10 +182,11 @@ public class BinaryST {
      * @param      x      { parameter_description }
      * @param      key    The key
      * @param      value  The value
+     *
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
-     * @return     { description_of_the_return_value }
      */
     private Node put(final Node x, final Book key, final Integer value) {
         if (x == null) {
@@ -212,7 +213,7 @@ public class BinaryST {
      * Average case:O(logN).
      * Worst case: O(N)
      */
-    public Integer get(final Book key) {
+    public Integer get(Book key) {
         return get(root, key);
     }
     /**
@@ -239,7 +240,7 @@ public class BinaryST {
         return x.value;
     }
     /**
-     * min value.
+     * min.
      *
      * @return     { description_of_the_return_value }
      * Best case: O(logN).
@@ -254,25 +255,20 @@ public class BinaryST {
         return min(root).key;
     }
     /**
-     * min value.
+     * min
      *
      * @param      x     { parameter_description }
      *
      * @return     { description_of_the_return_value }
-     * Best case: O(logN).
-     * Average case:O(logN).
-     * Worst case: O(N)
-     */
-    private Node min(final Node x) {
+     */private Node min(final Node x) {
         if (x.left == null) {
             return x;
         } else {
             return min(x.left);
         }
     }
-
     /**
-     * max value.
+     * max.
      *
      * @return     { description_of_the_return_value }
      */
@@ -284,14 +280,11 @@ public class BinaryST {
         return max(root).key;
     }
     /**
-     * max value.
+     * max.
      *
      * @param      x     { parameter_description }
      *
      * @return     { description_of_the_return_value }
-     * Best case: O(logN).
-     * Average case:O(logN).
-     * Worst case: O(N)
      */
     private Node max(final Node x) {
         if (x.right == null) {
@@ -330,10 +323,11 @@ public class BinaryST {
      *
      * @param      x     { parameter_description }
      * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
-     * @return     { description_of_the_return_value }
      */
     private Node floor(final Node x, final Book key) {
         if (x == null) {
@@ -357,10 +351,11 @@ public class BinaryST {
      * ceiling.
      *
      * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
-     * @return     { description_of_the_return_value }
      */
     public Book ceiling(final Book key) {
         if (key == null) {
@@ -376,17 +371,17 @@ public class BinaryST {
         } else {
             return x.key;
         }
-
     }
     /**
      * ceiling.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
-     * @return     { description_of_the_return_value }
      */
     private Node ceiling(final Node x, final Book key) {
         if (x == null) {
@@ -410,10 +405,11 @@ public class BinaryST {
      * select.
      *
      * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
-     * @return     { description_of_the_return_value }
      */
     public Book select(final int k) {
         if (k < 0 || k >= size()) {
@@ -424,14 +420,15 @@ public class BinaryST {
         return x.key;
     }
     /**
-     * Return key of rank k.
+     * return key of rank k.
      *
      * @param      x     { parameter_description }
      * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
-     * @return     { description_of_the_return_value }
      */
     private Node select(final Node x, final int k) {
         if (x == null) {
@@ -450,10 +447,11 @@ public class BinaryST {
      * rank.
      *
      * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
-     * @return     { description_of_the_return_value }
      */
     public int rank(final Book key) {
         if (key == null) {
@@ -463,14 +461,15 @@ public class BinaryST {
         return rank(key, root);
     }
     /**
-     * Number of keys in the subtree less than key.
+     * rank.
      *
      * @param      key   The key
      * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      * Best case: O(logN).
      * Average case:O(logN).
      * Worst case: O(N)
-     * @return     { description_of_the_return_value }
      */
     private int rank(final Book key, final Node x) {
         if (x == null) {
@@ -486,9 +485,22 @@ public class BinaryST {
             return size(x.left);
         }
     }
+    /**
+     * delete min value.
+     */
     public void deleteMin() {
         root = deleteMin(root);
     }
+    /**
+     * delete min.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Node deleteMin(Node x) {
         if (x.left == null) {
             return x.right;
@@ -497,9 +509,22 @@ public class BinaryST {
         x.size = 1 + size(x.left) + size(x.right);
         return x;
     }
+    /**
+     * delete max.
+     */
     public void deleteMax() {
         root = deleteMax(root);
     }
+    /**
+     * delete max.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     public Node deleteMax(Node x) {
         if (x.right == null) {
             return x.left;
@@ -508,9 +533,25 @@ public class BinaryST {
         x.size = 1 + size(x.left) + size(x.right);
         return x;
     }
+    /**
+     * delete.
+     *
+     * @param      key   The key
+     */
     public void delete(Book key) {
         root = delete(root, key);
     }
+    /**
+     * delete.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     * Best case: O(logN).
+     * Average case:O(logN).
+     * Worst case: O(N)
+     */
     private Node delete(Node x, Book key) {
         if (x == null) {
             return null;
@@ -533,3 +574,4 @@ public class BinaryST {
         return x;
     }
 }
+
