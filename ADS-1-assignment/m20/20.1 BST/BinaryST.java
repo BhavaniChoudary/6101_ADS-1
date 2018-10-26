@@ -22,7 +22,7 @@ class Book {
      * @param      a     { parameter_description }
      * @param      p     { parameter_description }
      */
-	Book(String n, String a, Double p) {
+	Book(final String n, final String a, final Double p) {
 		this.name = n;
         this.author = a;
         this.price = p;
@@ -113,7 +113,7 @@ public class BinaryST {
          * @param      v      { parameter_description }
          * @param      size1  The size 1
          */
-		Node(Book k, Integer v, int size1) {
+		Node(final Book k, final Integer v, final int size1) {
 			this.key = k;
             this.value = v;
             this.left = null;
