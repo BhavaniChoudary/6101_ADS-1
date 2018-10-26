@@ -1,0 +1,17 @@
+Starting audit...
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:3:25: '{' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:3:25: '}' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:4:29: Parameter args should be final. [FinalParameters]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:7:14: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:9:19: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:10: Line is longer than 80 characters (found 132). [LineLength]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:10:95: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:10:96: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:10:127: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m20\20.1 BST\Solution.java:10:128: '+' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 14 errors.
