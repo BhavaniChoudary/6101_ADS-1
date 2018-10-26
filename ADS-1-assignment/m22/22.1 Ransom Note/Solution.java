@@ -1,10 +1,32 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for hash table.
+ */
 class HashTable {
+    /**
+     * Class for node.
+     */
     class Node {
+        /**
+         * key var_description.
+         */
         private String key;
+        /**
+         * val var_description.
+         */
         private Integer val;
+        /**
+         * next var_description.
+         */
         private Node next;
+        /**
+         * Constructs the object.
+         *
+         * @param      k     { parameter_description }
+         * @param      v     { parameter_description }
+         * @param      n     { parameter_description }
+         */
         Node(final String k, final Integer v, final Node n) {
             this.key = k;
             this.val = v;
