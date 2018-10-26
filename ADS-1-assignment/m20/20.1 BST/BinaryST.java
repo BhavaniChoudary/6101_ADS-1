@@ -1,8 +1,27 @@
 import java.util.NoSuchElementException;
+/**
+ * Class for book.
+ */
 class Book {
+    /**
+     * name var_description.
+     */
 	private String name;
+    /**
+     * author var_description.
+     */
 	private String author;
+    /**
+     * price var_description.
+     */
 	private Double price;
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     * @param      a     { parameter_description }
+     * @param      p     { parameter_description }
+     */
 	Book(String n, String a, Double p) {
 		this.name = n;
         this.author = a;

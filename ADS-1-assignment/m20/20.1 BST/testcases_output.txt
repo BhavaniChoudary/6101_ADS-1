@@ -66,7 +66,7 @@ TheBook, Joy, 24000.0
 null
 IT, Viswas, 400.0
 Exception in thread "main" java.lang.NullPointerException
-	at BinaryST$Node.access$100(BinaryST.java:36)
-	at BinaryST.select(BinaryST.java:200)
+	at BinaryST$Node.access$100(BinaryST.java:55)
+	at BinaryST.select(BinaryST.java:219)
 	at Solution.main(Solution.java:46)
 ----------------------------------------
