@@ -10,6 +10,11 @@ class Solution {
 	private Solution() {
 		//function.
 	}
+	/**
+	 * main function_description.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc =  new Scanner(System.in);
 		int m = sc.nextInt();
@@ -47,8 +52,17 @@ class Solution {
         }
 	}
 }
+/**
+ * Class for student.
+ */
 class Student {
+	/**
+	 * rollno var_description.
+	 */
 	private String rollno;
+	/**
+	 * name var_description.
+	 */
 	private String name;
 	private Double marks;
 	Student(String r, String n, Double m) {
