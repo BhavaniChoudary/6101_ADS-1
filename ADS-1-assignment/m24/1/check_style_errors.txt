@@ -1,0 +1,22 @@
+Starting audit...
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:3: Class Solution should be declared as final. [FinalClass]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:7:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:19:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:45: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:46:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:47:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:48:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:49:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:49:17: Parameter r should be final. [FinalParameters]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:49:27: Parameter n should be final. [FinalParameters]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:49:37: Parameter m should be final. [FinalParameters]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:54:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:57:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:60:9: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 19 errors.
