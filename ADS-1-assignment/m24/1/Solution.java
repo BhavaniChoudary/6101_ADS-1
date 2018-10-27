@@ -64,18 +64,43 @@ class Student {
 	 * name var_description.
 	 */
 	private String name;
+	/**
+	 * marks var_description.
+	 */
 	private Double marks;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      r     { parameter_description }
+	 * @param      n     { parameter_description }
+	 * @param      m     { parameter_description }
+	 */
 	Student(String r, String n, Double m) {
 		this.rollno = r;
         this.name = n;
         this.marks = m;
 	}
+	/**
+	 * get rollno.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public String getrollno() {
 		return rollno;
 	}
+	/**
+	 * get name.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public String getname() {
 		return name;
 	}
+	/**
+	 * get marks.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Double getmarks() {
 		return marks;
 	}
