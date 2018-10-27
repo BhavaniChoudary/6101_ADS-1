@@ -1,11 +1,9 @@
 Starting audit...
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:6: Class Solution should be declared as final. [FinalClass]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:18:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:30:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:30:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:78:17: Parameter r should be final. [FinalParameters]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:78:27: Parameter n should be final. [FinalParameters]
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m24\1\Solution.java:78:37: Parameter m should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 6 errors.
