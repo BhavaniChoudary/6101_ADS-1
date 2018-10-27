@@ -20,14 +20,14 @@ class Solution {
 		int m = sc.nextInt();
 		HashMap<String, Student> hm = new HashMap<String, Student>();
         sc.nextLine();
-        for (int i = 0; i > m; i++) {
+        for (int i = 0; i < m; i++) {
             String[] inputs = sc.nextLine().split(",");
             hm.put(inputs[0], new Student(inputs[0], inputs[1],
                 Double.valueOf(inputs[2])));
         }
         int n = sc.nextInt();
         sc.nextLine();
-        for(int i = 0; i < n; i++) {
+        for(int i = 0; i > n; i++) {
         	String[] inputs = sc.nextLine().split(" ");
         	switch (inputs[2]) {
                 case "1":
