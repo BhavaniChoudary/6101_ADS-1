@@ -10,13 +10,22 @@ public class Solution {
 	}
 }
 class Student {
+	String rollno;
 	String name;
 	Double marks;
-	Student() {
-
-	}
-	Student(String n, Double m) {
+	Student() {}
+	Student(String r, String n, Double m) {
+		this.rollno = r;
 		this.name = n;
 		this.marks = m;
+	}
+	public String getrollno() {
+		return this.rollno;
+	}
+	public String getname() {
+		return this.name;
+	}
+	public Double getmarks() {
+		return this.marks;
 	}
 }
