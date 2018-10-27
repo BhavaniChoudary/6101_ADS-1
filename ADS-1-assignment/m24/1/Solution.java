@@ -1,6 +1,12 @@
 import java.util.Scanner;
 import java.util.HashMap;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 		//function.
 	}
@@ -30,8 +36,7 @@ class Solution {
                 case "2":
                 Student st = hm.get(inputs[1]);
                 if (st == null) {
-                    System.out.println(
-                        "Student doesn't exists...");
+                    System.out.println("Student doesn't exists...");
                     break;
                 }
                 System.out.println(st.getmarks());

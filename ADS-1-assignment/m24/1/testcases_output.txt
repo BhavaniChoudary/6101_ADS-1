@@ -14,7 +14,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:17)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -37,7 +37,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:17)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -64,7 +64,7 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:17)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -574,5 +574,5 @@ Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.next(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
 	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:17)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
