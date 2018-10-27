@@ -3,7 +3,7 @@ import java.util.HashMap;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */
@@ -27,7 +27,7 @@ class Solution {
         }
         int n = sc.nextInt();
         sc.nextLine();
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
         	String[] inputs = sc.nextLine().split(" ");
         	switch (inputs[2]) {
                 case "1":
@@ -75,7 +75,7 @@ class Student {
 	 * @param      n     { parameter_description }
 	 * @param      m     { parameter_description }
 	 */
-	Student(String r, String n, Double m) {
+	Student(final String r, final String n, final Double m) {
 		this.rollno = r;
         this.name = n;
         this.marks = m;
