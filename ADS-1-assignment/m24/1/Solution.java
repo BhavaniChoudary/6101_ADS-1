@@ -4,21 +4,21 @@ import java.util.HashMap;
  * Class for solution.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//function.
-	}
-	/**
-	 * main function_description.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner sc =  new Scanner(System.in);
-		int m = sc.nextInt();
-		HashMap<String, Student> hm = new HashMap<String, Student>();
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //function.
+    }
+    /**
+     * main function_description.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc =  new Scanner(System.in);
+        int m = sc.nextInt();
+        HashMap<String, Student> hm = new HashMap<String, Student>();
         sc.nextLine();
         for (int i = 0; i < m; i++) {
             String[] inputs = sc.nextLine().split(",");
@@ -28,8 +28,8 @@ final class Solution {
         int n = sc.nextInt();
         sc.nextLine();
         for (int i = 0; i < n; i++) {
-        	String[] inputs = sc.nextLine().split(" ");
-        	switch (inputs[2]) {
+            String[] inputs = sc.nextLine().split(" ");
+            switch (inputs[2]) {
                 case "1":
                 Student s = (hm.get(inputs[1]));
                 if (s == null) {
@@ -50,59 +50,59 @@ final class Solution {
                 break;
             }
         }
-	}
+    }
 }
 /**
  * Class for student.
  */
 class Student {
-	/**
-	 * rollno var_description.
-	 */
-	private String rollno;
-	/**
-	 * name var_description.
-	 */
-	private String name;
-	/**
-	 * marks var_description.
-	 */
-	private Double marks;
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      r     { parameter_description }
-	 * @param      n     { parameter_description }
-	 * @param      m     { parameter_description }
-	 */
-	Student(final String r, final String n, final Double m) {
-		this.rollno = r;
+    /**
+     * rollno var_description.
+     */
+    private String rollno;
+    /**
+     * name var_description.
+     */
+    private String name;
+    /**
+     * marks var_description.
+     */
+    private Double marks;
+    /**
+     * Constructs the object.
+     *
+     * @param      r     { parameter_description }
+     * @param      n     { parameter_description }
+     * @param      m     { parameter_description }
+     */
+    Student(final String r, final String n, final Double m) {
+        this.rollno = r;
         this.name = n;
         this.marks = m;
-	}
-	/**
-	 * get rollno.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public String getrollno() {
-		return rollno;
-	}
-	/**
-	 * get name.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public String getname() {
-		return name;
-	}
-	/**
-	 * get marks.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public Double getmarks() {
-		return marks;
-	}
+    }
+    /**
+     * get rollno.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public String getrollno() {
+        return rollno;
+    }
+    /**
+     * get name.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public String getname() {
+        return name;
+    }
+    /**
+     * get marks.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Double getmarks() {
+        return marks;
+    }
 }
 
