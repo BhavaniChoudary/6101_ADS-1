@@ -27,7 +27,7 @@ class Solution {
         }
         int n = sc.nextInt();
         sc.nextLine();
-        for(int i = 0; i > n; i++) {
+        for(int i = 0; i < n; i++) {
         	String[] inputs = sc.nextLine().split(" ");
         	switch (inputs[2]) {
                 case "1":
