@@ -1,5 +1,4 @@
 Starting audit...
 [ERROR] C:\6101_ADS-1\ADS-1-assignment\m23\23.1 Hashing with Linear Probing\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\6101_ADS-1\ADS-1-assignment\m23\23.1 Hashing with Linear Probing\Solution.java:12:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
